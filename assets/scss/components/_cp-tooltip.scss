@@ -1,0 +1,22 @@
+.tooltip-inner {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: $font-title;
+    max-width: 110px;
+    padding: 3px 10px;
+    color: $color-white;
+    text-align: center;
+    background-color: $color-secondary;
+    border-radius: 4px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before, .bs-tooltip-start .tooltip-arrow::before {
+    left: -1px;
+    border-width: .4rem 0 .4rem .4rem;
+    border-left-color: $color-secondary;
+}

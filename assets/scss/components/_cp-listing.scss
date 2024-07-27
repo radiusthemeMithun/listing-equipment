@@ -1,0 +1,442 @@
+.rt-listing-wrap {
+    .section-heading {
+        .subtitle {
+            background-color: $color-gray;
+        }
+    }
+}
+
+
+.rt-listing-box {
+   border: 1px solid #E3E3E3;
+   border-radius: 10px;
+    &:hover {
+        .item-img {
+            a {
+                img {
+                    transform: translateY(10px) scale(1.1);
+                }
+            }
+        }
+    }
+    .item-img {
+        border-radius: 10px 10px 0 0;
+        > a {
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            @include media-only ("lg", max) {
+                width: 100%;
+            }
+            img {
+                border-radius: 10px 10px 0 0;
+                transition: all .3s ease-out 0s;
+                @include media-only ("lg", max) {
+                    width: 100%;
+                }
+            }
+        }
+        .favourite-button {
+            top: 15px;
+            right: 15px;
+            transition: all .3s ease-in-out;
+            i {
+                &::before {
+                    transition: all .3s ease-in-out;
+                    font-size: 15px;
+                    position: relative;
+                    top: 1px;
+                }
+            }
+        }
+    }
+    .content {
+        background-color: $color-white;
+        border-radius: 0 0 10px 10px;
+        padding: 33px 24px 24px 24px;
+    }
+    &.style-2 {
+        .item-img {
+            border-radius: 10px 0 0 10px;
+            a {
+                border-radius: 10px 0 0 10px;
+                img {
+                    border-radius: 10px 0 0 10px;
+                }
+            }
+        }
+        .content {
+            padding: 20px 60px 0 0;
+            flex: 1;
+            .favourite-button {
+                right: 15px;
+            }
+        }
+    }
+}
+
+
+//........listing Elements.......//
+.listing-action-bar {
+    border: 1px solid #E3E3E3;
+    border-radius: $border-radius-sm;
+    padding: 10px 12px 10px 20px;
+    margin-bottom: 20px;
+}
+.result-action {
+    margin-bottom: 10px;
+    @include media-only ("480px", min) {
+        margin-bottom: 0;
+    }
+    .text {
+        font-size: 15px;
+        font-family: $font-title;
+    }
+}
+.product-sorting {
+    gap: 50px;
+}
+
+.search-filter-form {
+    .text {
+        font-size: 14px;
+        font-family: $font-title;
+        display: inline-block;
+        margin-right: 7px;
+    }
+}
+
+.layout-switcher {
+    ul {
+        gap: 8px;
+        li {
+            .product-view-trigger{
+                height: 38px;
+                width: 38px;
+                border-radius: 5px;
+                border: 1px solid #E0E3E7;
+                background-color: #F6F6F6;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                i {
+                    &::before {
+                        color: $color-body;
+                    }
+                }
+            }
+            &.active {
+                .product-view-trigger {
+                    background-color: $color-body;
+                    i {
+                        &::before {
+                            color: $color-white;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+
+.product-box-list .product-grid-view {
+    display: none;
+}
+
+.product-box-list .row > [class^="col-"] {
+    max-width: 100% !important;
+    flex: 100%;
+}
+.product-box-grid .product-list-view {
+    display: none;
+}
+
+//........listing Details.......//
+.rt-listing-details-wrap {
+    background-color: #f8f8f8;
+}
+.listing-dtl-box {
+    background-color: $color-white;
+    border: 1px solid #E3E3E3;
+    padding: 23px 30px;
+    border-radius: $border-radius-md;
+    margin-bottom: 30px;
+    .title {
+        font-size: 20px;
+        font-weight: $font-medium;
+        line-height: 26px;
+        margin-bottom: 10px;
+        span {
+            color: #576982;
+        }
+    }
+}
+//........listing Overview.......//
+.rt-overview {
+    p {
+        color: $color-border;
+    }
+}
+//........listing Education.......//
+.education-list {
+    li {
+        position: relative;
+        font-family: $font-title;
+        color: $color-border;
+        line-height: 26px;
+        padding-left: 20px;
+        margin-bottom: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &::after {
+            content: "";
+            height: 5px;
+            width: 5px;
+            border-radius: 100%;
+            background-color: $color-border;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
+.rt-gap {
+    padding-bottom: 30px;
+    .title {
+        margin-bottom: 20px;
+    }
+}
+//........listing Expert.......//
+.expert-list {
+    gap: 6px;
+    li {
+        a {
+            font-family: $font-title;
+            color: $color-border;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: $color-border;
+            background-color: #FAF4E8;
+            border-radius: $border-radius-sm;
+            padding: 10px 18px;
+            font-size: 15px;
+            transition: all .3s ease-in-out;
+            &:hover {
+                background-color: $color-secondary;
+                color: $color-white;
+            }
+        }
+    }
+}
+//........listing cost.......//
+.cost-list {
+    li {
+        background-color: #F8F8F8;
+        border-radius: $border-radius-xs;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // margin-bottom: 10px;
+        &:nth-child(even) {
+            background-color: $color-white;
+        }
+        .text {
+            font-family: $font-title;
+            color: $color-border;
+        }
+        .element {
+            font-family: $font-title;
+            color: $color-primary;
+        }
+    }
+}
+//........listing Map.......//
+.rt-location-map {
+    .title {
+        margin-bottom: 20px;
+    }
+}
+//........listing Guest Review.......//
+.guest-review-layout {
+    gap: 30px;
+    .review-box {
+        background-color: #F5F6F7;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 138px;
+        width: 100%;
+        border-radius: $border-radius-sm;
+        @include media-only ("xs", min) {
+            width: 170px;
+        }
+        .review-number {
+            color: $color-secondary;
+            font-size: 50px;
+            font-weight: $font-semibold;
+            line-height: 65px;
+        }
+        .text {
+            font-family: $font-title;
+            color: #0F294D;
+            font-weight: $font-semibold;
+        }
+        .number {
+            font-family: $font-title;
+            color: $color-primary;
+            font-weight: $font-medium;
+            margin-bottom: 13px;
+        }
+    }
+}
+//........Progress wrap......//
+.rt-progrss-bar-wrapper {
+    flex: 1;
+}
+.single-progrss-bar {
+    .single-progress {
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        position: relative; 
+        .title-bar {
+            .title {
+                font-weight: $font-medium;
+                line-height: 26px;
+                margin-bottom: 10px;
+                color: #010101;
+            }
+        }
+        .progress {
+            height: 6px;
+            border-radius: 100px;
+            background-color: #F6F5FB;
+            .progress-bar {
+                background: linear-gradient(270deg, #DEBB67 23.5%, #F5EDD9 108.2%);
+                border-radius: 100px;
+            }
+        }
+    }
+}
+.progress-review {
+    font-weight: $font-semibold;
+    font-size: 12px;
+    line-height: 20px;
+    color: $color-primary;
+    bottom: 20px;
+    right: 0;
+    background-color: #EBEEF1;
+    font-family: $font-title;
+    height: 18px;
+    width: 31px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+//........listing User Review.......//
+.rt-user-review {
+    padding-right: 75px;
+}
+.listing-user-review {
+    .comment-post {
+        border-bottom: 1px solid #E2E6EC;
+        padding-left: 20px;
+        gap: 25px;
+        .content {
+            flex: 1;
+            .title-box {
+                padding-left: 10px;
+                margin-bottom: 15px;
+                &::after {
+                    content: "";
+                    height: 30px;
+                    width: 3px;
+                    background-color: $color-secondary;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    border-radius: 100px;
+                }
+                .sm-title {
+                    color: $color-black;
+                    font-weight: $font-semibold;
+                    line-height: 26px;
+                    margin-bottom: 0;
+                }
+                .designation {
+                    color: #999999;
+                    font-size: 14px;
+                    font-family: $font-title;
+                }
+            }
+            p {
+                margin-bottom: 18px;
+            }
+            .rt-review {
+                @include media-only ("xs", min) {
+                    top: 25px;
+                    right: 0;
+                    position: absolute;
+                }
+            }
+        }
+        &:nth-child(odd) {
+            padding-left: 0;
+        }
+        &:nth-child(3) {
+            border-bottom: 0;
+            padding-bottom: 0;
+            padding-left: 25px;
+            @include media-only ("xs", min) {
+                padding-left: 60px;
+            }
+        }
+    }
+}
+
+.rt-user-add-review {
+    .review-area {
+        margin-bottom: 25px;
+        .review-wrap {
+            gap: 30px;
+            @include media-only ("lg", min) {
+                gap: 60px;
+            }
+            .rt-review {
+                .review {
+                    li {
+                        i {
+                            &::before {
+                                color: #D7D7D7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-form-style-1 {
+        .rt-form-control {
+            height: 50px;
+            background-color: transparent;
+            border: 1px solid #E0E3E7;
+        }
+        .submit-btn {
+            background-color: $color-secondary;
+            &:hover {
+                background-color: $color-black;
+            }
+        }
+    }
+}
+
+
+
+

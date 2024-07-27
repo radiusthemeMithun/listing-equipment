@@ -1,0 +1,71 @@
+.nav-tabs {
+    border-bottom: 0;
+    display: block;
+    .nav-item {
+        .nav-link {
+            background-color: transparent;
+            border: 0;
+            border-radius: 6px;
+            color: $color-body;
+            display: inline-block;
+            text-align: center;
+            padding: 11px 20px;
+            font-size: 15px;
+            font-weight: $font-semibold;
+            position: relative;
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+            &.active {
+                color: $color-primary;
+                border: 1px solid $color-primary;
+            }
+        }
+    }
+    &.style-2 {
+        .nav-item {
+            .nav-link {
+                background: linear-gradient(90deg, #F4F7FF 16%, #FFFFFF 100%);
+                border: 1px solid #DDE1EA;
+                // border-radius: 8px 0px 0px 0px;
+                width: 100%;
+                &.active {
+                    background: linear-gradient(90deg, #FFFFFF 100%, #FFFFFF 100%);
+                }
+            }
+        }
+    }
+    &.style-3 {
+        display: block;
+        margin-bottom: 10px;
+        background-color: #EEF1F6;
+        border: 1px solid #DDE3EC;
+        border-radius: 100px;
+        padding: 5px;
+        justify-content: space-between;
+        @include media-only ("480px", min) {
+            display: flex;
+            margin-bottom: 0;
+        }
+        .nav-item {
+            margin-bottom: 10px;
+            @include media-only ("480px", min) {
+                margin-bottom: 0;
+            }
+            .nav-link {
+                background-color: $color-white;
+                padding: 10px 20px;
+                line-height: 1;
+                border-radius: 100px;
+                &.active {
+                    background: $color-primary;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,41 @@
+/*------------------- toBottomFrom Animation -------------------*/
+@keyframes toBottomFromTop {
+    49% {
+      	transform: translateY(-100%);
+    }
+    50% {
+      	opacity: 0;
+      	transform: translateY(100%);
+    }
+    51% {
+      	opacity: 1;
+    }
+}
+
+
+
+/*------------------- Circle Animation -------------------*/
+@keyframes rt-circle {
+	0% {
+	  	transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+/*------------------- spin Animation -------------------*/
+
+@keyframes rtDown {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+

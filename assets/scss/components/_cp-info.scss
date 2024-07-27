@@ -1,0 +1,108 @@
+.info-box {
+    .item-icon {
+        img {
+            transition: all .4s;
+        }
+    }
+    .title {
+        font-weight: $font-medium;
+        font-size: 16px;
+        margin-bottom: 13px;
+        line-height: 24px;
+        a {
+            color: $color-secondary;
+            transition: all .3s ease-in-out;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+    .element-info {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 8px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        i {
+            margin-right: 10px;
+            &::before {
+                font-size: 15px;
+                font-weight: $font-medium;
+            }
+        }
+    }
+   
+}
+
+.rt-info-list {
+    li {
+        font-size: 15px;
+        font-weight: $font-medium;
+        line-height: 20px;
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        i {
+            margin-right: 5px;
+            &::before {
+                font-weight: $font-medium;
+                font-size: 16px;
+                color: $color-body;
+            }
+        }
+    }  
+}
+
+.rt-tag-list {
+    left: 0;
+    top: 20px;
+    ul {
+        li {
+            font-size: 12px;
+            font-weight: $font-medium;
+            text-transform: capitalize;
+            line-height: 1;
+            padding: 7px 15px 7px 10px;
+            clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+            
+            &:nth-child(1) {
+                background-color: $color-body;
+                color: $color-white;
+                margin-bottom: 3px;
+                display: inline-block;
+            }
+            &:nth-child(2) {
+                background: linear-gradient(90deg, #FFDF7B 0%, #FFC100 100%);
+                color: $color-secondary;
+                i {
+                    &::before {
+                        color: $color-secondary;
+                        font-weight: $font-medium;
+                    }
+                }
+            }
+        }
+    }
+}
+.rt-price-tag {
+    background-color: $color-primary;
+    color: $color-secondary;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: $font-semibold;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 8px 10px;
+    border-radius: $border-radius-sm;
+    bottom: -15px;
+    left: 24px;
+    span {
+        font-weight: $font-normal;
+        font-size: 12px;
+    }
+}
+
+
+

@@ -1,0 +1,70 @@
+.rt-hero-wrap {
+    padding: 100px 0;
+    z-index: 1;
+    @include media-only ("md", min) {
+        padding: 172px 0 90px 0;
+    }
+    height: 100%;
+    width: 100%;
+    background-image: url(../../media/bg/searchbox.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+//......hero-elements......//
+
+.swiper-button-next, .swiper-button-prev {
+    height: 50px;
+    width: 50px;
+    background-color: $color-white;
+    border-radius: 100%;
+    border: 1px solid #E6E4DC;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        i {
+            &::before {
+                color: $color-secondary;
+            }
+        }
+    }
+    &::after {
+        display: none;
+    }
+    i {
+        &::before {
+            color: $color-font;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+.swiper-button-next {
+    right: 0;
+}
+.swiper-button-prev {
+    left: 0;
+}
+
+//......hero-img.......//
+
+.rt-hero-img {
+    bottom: 0;
+    right: 75px;
+    z-index: 1;
+    display: none;
+    @include media-only("lg", min) {
+        display: block;
+    }
+}
+
+
+
+
+

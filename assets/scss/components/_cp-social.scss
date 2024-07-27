@@ -1,0 +1,96 @@
+.rt-social {
+    ul {
+        gap: 13px;
+        li {
+            a {
+                i {
+                    &::before {
+                        color: $color-body;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                &:hover {
+                    i {
+                        &::before {
+                            color: $color-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rt-social-box {
+    margin-top: 15px;
+    @include media-only ("480px", min) {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        margin-top: 0;
+    }
+    ul {
+        gap: 6px;
+        li {
+            a {
+                height: 36px;
+                width: 36px;
+                border-radius: 100%;
+                background: #F8F8F8;
+                border: 1px solid #DCDCDC;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                transition: all .3s ease-in-out;
+                i {
+                    &::before {
+                        color: $color-body;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                &:hover {
+                    background-color: $color-secondary;
+                    border-color: $color-secondary;
+                    i {
+                        &::before {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.style-2 {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        @include media-only ("sm", min) {
+            top: 50%;
+            transform: translateY(-50%);
+            right: 30px;
+        }
+        ul {
+            li {
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &.style-3 {
+        position: unset;
+        ul {
+            li {
+                a {
+                    border-radius: $border-radius-sm;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: $color-secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+

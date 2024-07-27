@@ -1,0 +1,101 @@
+.pagination-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 1px solid #E0E3E7;
+    border-radius: $border-radius-sm;
+    padding: 15px 24px;
+    width: 100%;
+}
+.rt-pagination {
+    gap: 5px;
+    display: inline-flex;
+    .page-item {
+        .page-link {
+            height: 36px;
+            width: 36px;
+            border: 0;
+            background-color: #F5F6F7;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            color: $color-body;
+            transition: all .4s ease-in-out;
+            font-size: 16px;
+            font-weight: $font-semibold;
+            padding: 0;
+            &.prev, &.next {
+                width: 100%;
+                padding: 0 18px;
+                i {
+                    font-size: 13px;
+                    color: $color-primary;
+                    margin-left: 7px;
+                    transition: all .3s ease-in-out;
+                }
+            }
+            &.prev {
+                i {
+                    transform: rotate(-180deg);
+                    margin-left: auto;
+                    margin-right: 7px;
+                }
+            }
+            &:hover {
+                color: $color-white;
+                background-color: $color-secondary;
+                &.prev, &.next {
+                    i {
+                        color: $color-white;
+                    }
+                }
+            }
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+            }
+            &.active {
+                background-color: $color-secondary;
+                color: $color-white;
+            }
+        }
+    }
+}
+.previous-pagination {
+    font-weight: $font-medium;
+    a {
+        color: $color-body;
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: $color-secondary;
+            i {
+                &::before {
+                    color: $color-body;
+                }
+            }
+        }
+        i {
+            margin-right: 7px;
+            @include media-only ("xs", max) {
+                display: none;
+            }
+            &::before {
+                color: $color-secondary;
+                transition: all .3s ease-in-out;
+                font-size: 28px;
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+}
+.next-pagination {
+    a {
+        i {
+            margin-right: 0;
+            margin-left: 7px;
+        }
+    }
+}

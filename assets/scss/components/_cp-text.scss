@@ -1,0 +1,74 @@
+.text-box {
+    .subtitle {
+        font-weight: $font-medium;
+        text-transform: uppercase;
+        font-size: 13px;
+        display: inline-block;
+        margin-bottom: 15px;
+        color: $color-white;
+        background-color: $color-secondary;
+        line-height: 26px;
+        border-radius: $border-radius-sm;
+        padding: 0 12px;
+    }
+    .title {
+        font-family: $font-title;
+		color: $color-black;
+        font-size: 30px;
+        font-weight: $font-semibold;
+        line-height: 35px;
+        margin-bottom: 12px;
+        text-transform: capitalize;
+        @include media-only ("sm", min) {
+            font-size: 36px;
+            line-height: 40px;
+        }
+    }
+    p {
+        margin-bottom: 20px;
+        text-transform: capitalize;
+    }
+    &.rt-text-light {
+        .title {
+            color: $color-white;
+            @include media-only ("sm", min) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+        p {
+            color: #C5C5C5;
+        }
+        .lawyer-button {
+            .lawyer-btn {
+                background-color: $color-secondary;
+                color: $color-white;
+                &:hover {
+                    color: $color-primary;
+                    i {
+                        &::before {
+                            color: $color-primary;
+                        }
+                    }
+                }
+                &::before {
+                    background-color: $color-white;
+                }
+                i {
+                    &::before {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

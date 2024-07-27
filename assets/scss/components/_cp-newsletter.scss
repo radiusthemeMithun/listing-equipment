@@ -1,0 +1,37 @@
+.rt-newsletter-wrap {
+    background-color: $color-primary;
+    padding: 100px 0;
+}
+
+.newsletter-box {
+    .title {
+        color: #000000;
+        font-size: 34px;
+        font-weight: 900;
+        text-transform: capitalize;
+        line-height: 44px;
+
+    }
+}
+
+.rt-shape-img-list {
+    ul {
+        li {
+            position: absolute;
+            &:nth-child(1) {
+                bottom: 0;
+                right: 0;
+                height: 100%;
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &:nth-child(2) {
+                top: 0;
+                left: 15%;
+                animation: rtDown 2s linear infinite;
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.accordion {
+    .accordion-item {
+        border: 0;
+        background-color: transparent;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #E5E5E5;
+        padding-bottom: 27px;
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+        .accordion-header {
+            .accordion-button {
+                display: block;
+                width: 100%;
+                text-align: left;
+                position: relative;
+                box-shadow: none;
+                transition: all .3s ease;
+                padding: 0;
+                background-color: transparent;
+                border-bottom: 0;
+                border-radius: 0;
+                text-transform: capitalize;
+                color: $color-black;
+                font-size: 20px;
+                font-weight: $font-medium;
+                font-family: $font-title;
+                &:hover {
+                    color: $color-secondary;
+                }
+                .accr-plus, 
+                .accr-minus {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent;
+                    color: var(--color-primary);
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transition: all 0.5s ease-in-out;
+                    color: $color-secondary;
+                    font-size: 8px;
+                    border-radius: 0;
+                    transform: translateY(-50%);
+                    &::before {
+                        width: auto;
+                        margin: 0;
+                        font-size: 8px;
+                    }
+                    @include media-only ("lg", min) {
+                        font-size: 22px;
+                    }
+                    @media only screen and (max-width: 479px) {
+                        right: 15px;
+                    }
+                }
+                .accr-plus {
+                    display: none;
+                }
+                &.collapsed {
+                    transition: all 0.5s ease-in-out;
+                    .accr-minus {
+                        display: none;
+                    }
+                
+                    .accr-plus {
+                        display: flex;
+                        &::before {
+                            font-weight: $font-bold;
+                        }
+                    }
+                }
+                &:focus {
+                    outline: 0;
+                    box-shadow: none;
+                }
+            }
+            .accordion-button.collapsed {
+                color: $color-primary;
+                background-color: transparent;
+                box-shadow: 0;
+                &:hover {
+                    color: $color-secondary;
+                }
+            }
+        }
+        .accordion-body {
+            padding: 25px 0 0 0;
+            border-top: 0;
+            background-color: transparent;
+            box-shadow: 0;
+        }
+    }
+}

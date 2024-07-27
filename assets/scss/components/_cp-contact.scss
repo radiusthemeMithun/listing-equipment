@@ -1,0 +1,271 @@
+/**
+ * Components: Contact.
+ */
+.rt-contact-wrap {
+    padding-bottom: 80px;
+}
+
+.rt-comment-box {
+    background-color: $color-secondary-100;
+    border: 1px solid #E5DECA;
+    border-radius: $border-radius-md;
+    padding: 30px;
+    @include media-only ("xs", min) {
+        padding: 40px;
+    }
+    .title {
+        font-size: 24px;
+        font-weight: $font-bold;
+        color: $color-black;
+        line-height: 30px;
+        margin-bottom: 5px;
+        font-family: $font-body;
+    }
+    p {
+        color: $color-border;
+        margin-bottom: 20px;
+    }
+    .contact-form-style-1 {
+        .form-group {
+            margin-bottom: 16px;
+            .rt-form-control {
+                padding: 0 0 0 26px;
+                background-color: $color-white;
+                border: 1px solid #E5DECA;
+                &::placeholder {
+                    color: #999999;
+                }
+            }
+            .rt-textarea  {
+                min-height: 130px;
+                padding-top: 25px;
+            }
+        }
+    }
+}
+.rt-contact-layout {
+    @include media-only ("lg", min) {
+        transform: translateY(-55px);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+.rt-contact-box {
+    background-color: $color-white;
+    border: 1px solid #DBDBDB;
+    border-radius: $border-radius-md;
+    padding: 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+    @include media-only ("xs", min) {
+        padding: 25px 40px 40px;
+    }
+    .title {
+        font-size: 24px;
+        font-weight: $font-semibold;
+        color: $color-black;
+        line-height: 30px;
+        margin-bottom: 14px;
+        position: relative;
+        padding-bottom: 20px;
+        &::after {
+            content: "";
+            height: 5px;
+            width: 40px;
+            background-color: $color-secondary;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    p {
+        margin-bottom: 25px;
+    }
+}
+
+.contact-form-style-1 {
+    .form-group {
+        margin-bottom: 18px;
+        position: relative;
+        .rt-form-control {
+			background-color: #F9F9F9;
+            border-radius: $border-radius-sm;
+            border: 1px solid #E5E5E5;
+            color: $color-primary;
+            font-weight: $font-medium;
+            padding: 0 0 0 20px;
+            height: 47px;
+            font-family: $font-title;
+            font-size: 15px;
+            
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+                border-color: $color-body;
+            }
+            &::placeholder {
+                color: $color-body;
+            }
+        }
+        .rt-textarea {
+            min-height: 194px;
+            resize: none;
+            padding-top: 20px;
+        }
+        .text {
+            color: #7F838C;
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: $font-medium;
+        }
+    }
+
+  
+    .submit-btn {
+        border-radius: $border-radius-sm;
+		color: $color-white;
+		background-color: $color-primary;
+		text-align: center;
+		display: inline-block;
+		padding: 18px 45px;
+		transition: all .3s ease-in-out;
+		font-weight: $font-semibold;
+        font-size: 16px;
+        border: 0;
+        @include media-only ("sm", min) {
+            padding: 18px 58px;
+        }
+        &:hover {
+            color: $color-white;
+            background-color: $color-secondary;
+        }
+		&:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+}
+
+
+.form-check {
+    padding: 0;
+    .form-check-input {
+        display: none;
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+    input[type=checkbox] + label {
+        padding: 0;
+        font-size: 16px;
+        line-height: 28px;
+        text-transform: capitalize;
+        color: $color-border;
+        font-family: "Mada", "sans-serif";
+    }
+    input[type=checkbox] + label:before {
+        content: "\2714";
+        border: 1px solid #C6C6C6;
+        border-radius: 4px;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        padding-left: 2px;
+        padding-bottom: 0;
+        margin-right: 5px;
+        color: transparent;
+        transition: .2s;
+        line-height: 18px;
+    }
+      
+    input[type=checkbox] + label:active:before {
+        transform: scale(0);
+    }
+      
+    input[type=checkbox]:checked + label:before {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        color: $color-white;
+    }
+}
+
+.rt-map {
+    border-radius: $border-radius-md;
+    iframe {
+        border-radius: $border-radius-md;
+        filter: grayscale(100%);
+        width: 100%;
+    }
+}
+
+.contact-list {
+    display: flex;
+    gap: 23px;
+    border-bottom: 1px solid #E4E8EF;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    &:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .item-icon {
+        height: 70px;
+        width: 70px;
+        border-radius: 100%;
+        background-color: $color-secondary-100;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            &::before {
+                color: $color-secondary;
+                font-size: 24px;
+                font-weight: $font-medium;
+            }
+        }
+    }
+    .content {
+        flex: 1;
+        .label {
+            font-size: 20px;
+            font-weight: $font-medium;
+            color: $color-primary;
+            font-family: $font-title;
+        }
+        .info {
+            font-family: $font-title;
+            line-height: 26px;
+        }
+        .contact {
+            line-height: 26px;
+            a {
+                font-family: $font-title;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+  
+/*rt-contact-form*/
+  
+.rt-contact-form {
+    .form-response {
+        .alert {
+            margin-top: 1rem;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

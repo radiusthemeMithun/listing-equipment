@@ -1,0 +1,87 @@
+.rt-breadcrumb-wrap {
+    padding: 80px 0;
+    @include media-only ("md", min) {
+        padding: 170px 0 75px;
+    }
+    &::before {
+        background-image: url(../../media/banner/breadcrumb-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        content: "";
+        height: 100%;
+        width: 100%;
+        filter: grayscale(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, #0D0D0D 60.65%, #1B1811 100%);
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.breadcrumb {
+    z-index: 1;
+    position: relative;
+    .breadcrumb-item {
+        position: relative;
+        font-family: $font-title;
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+        &::after {
+            content: "\e820";
+            font-family: "rt-clawyer";
+            font-size: 11px;
+            font-weight: $font-semibold;
+            color: #797979;
+            padding: 0 10px;
+        }
+        a {
+            transition: all .3s ease-in-out;
+            color: #969696;
+            font-family: $font-title;
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+        &.active {
+            color: $color-secondary;
+        }
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: none;
+}
+
+.breadcrumb-title {
+    font-size: 40px;
+    font-weight: $font-semibold;
+    text-transform: capitalize;
+    color: $color-white;
+    z-index: 1;
+    margin-bottom: 10px;
+    @include media-only ("sm", min) {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}

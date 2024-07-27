@@ -1,0 +1,29 @@
+
+
+/*------------------- countdown -------------------*/
+.rt-counter-wrap {
+    @include media-only ("lg", min) {
+        padding: 130px 0 135px;
+    }
+}
+.counterUp {
+    color: $color-white;
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: $font-bold;
+    line-height: 24px;
+}
+.post-fix {
+    color: $color-white;
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: $font-bold;
+    line-height: 24px;
+}
+
+
+
+
+
+
+

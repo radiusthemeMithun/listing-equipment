@@ -1,0 +1,184 @@
+
+.rt-testimonial-wrap {
+    @include media-only ("lg", min) {
+        padding-bottom: 180px;
+    }
+    .section-heading {
+        @include media-only ("lg", min) {
+            width: 662px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+
+.rt-testimonial-box {
+    background-color: transparent;
+    border-radius: $border-radius-lg;
+    border: 1px solid #e1e1e1;
+    padding: 30px;
+    @include media-only ("lg", min) {
+        padding: 40px 30px 40px 40px;
+    }
+}
+
+.rt-testimonial-box-2 {
+    .text-box {
+        .subtitle {
+            color: #7F838C;
+            letter-spacing: .6;
+            text-transform: uppercase;
+            font-weight: $font-medium;
+            background-color: transparent;
+            padding: 0;
+            border: 0;
+            font-size: 16px;
+        }
+        .title {
+            font-size: 40px;
+            font-weight: $font-bold;
+            line-height: 45px;
+            margin-bottom: 35px;
+        }
+        .item-quote {
+            font-size: 18px;
+            font-weight: $font-medium;
+            font-style: italic;
+            line-height: 28px;
+            z-index: 1;
+            margin-bottom: 35px;
+            .shape {
+                right: 20px;
+                top: -20px;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.testimonial-title {
+    font-size: 18px;
+    font-weight: $font-medium;
+    margin-bottom: 10px;
+}
+
+.rt-quote {
+    line-height: 26px;
+    font-family: $font-title;
+}
+
+.rt-review {
+    .review {
+        gap: 4px;
+        li {
+            i {
+                &::before {
+                    color: #FFC926;
+                }
+            }
+        }
+    }
+}
+
+.rt-author-img {
+    img {
+        border-radius: 100%;
+    }
+}
+
+.rt-author-wrap {
+    gap: 12px;
+}
+
+.rt-author {
+    .name {
+        font-size: 20px;
+        font-weight: $font-medium;
+        color: $color-black;
+        line-height: 26px;
+        font-family: $font-title;
+    }
+    .designation {
+        font-family: $font-title;
+        font-size: 14px;
+    }
+}
+
+.rt-author-button-wrap {
+    position: relative;
+    z-index: 1;
+    .swiper-button {
+        .swiper-button-next, .swiper-button-prev {
+            transform: translateY(0);
+            position: unset;
+        }
+    }
+}
+
+.testimonial-image-box {
+    .rt-image-box {
+        z-index: 1;
+       .item-element {
+            left: -40px;
+            bottom: 60px;
+            display: none;
+            @include media-only ("sm", min) {
+                display: block;
+            }
+            .element {
+                border: 1px solid #BCBCBC;
+                box-shadow: -5px 6px 0px #E8E8E8;
+                border-radius: 50px;
+                height: 71px;
+                width: 186px;
+                gap: 10px;
+                padding: 20px;
+                background-color: $color-white;
+                .text {
+                    color: $color-secondary;
+                    font-size: 22px;
+                    font-weight: $font-extra-bold;
+                }
+            }
+            &.style-2 {
+                right: 80px;
+                top: 150px;
+                left: auto;
+                bottom: auto;
+                @include media-only ("md", min) {
+                    right: 0px;
+                }
+                .element {
+                    border: 0;
+                    border-radius: $border-radius-lg;
+                    background-color: $color-primary;
+                    box-shadow: -9.09091px 9.09091px 0px rgba(0, 0, 0, 0.16);
+                    width: 116px;
+                    height: 100px;
+                    flex-direction: column;
+                    padding: 30px 20px;
+                    .text-counting {
+                        color: $color-secondary;
+                        font-size: 27px;
+                        font-weight: $font-extra-bold;
+                        line-height: 26px;
+                    }
+                    .text {
+                        color: $color-secondary;
+                        font-size: 12px;
+                        font-weight: $font-semibold;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

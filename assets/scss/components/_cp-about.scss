@@ -1,0 +1,122 @@
+.rt-about-wrap {
+    .rt-text-strok {
+        top: 50%;
+        right: -60px;
+        transform: translateY(-50%) rotate(-90deg);
+    }
+}
+
+
+
+//..........About Element.......//
+.rt-about-img {
+    img {
+        border-radius: $border-radius-xl;
+        @include media-only ("lg", max) {
+            width: 100%;
+        }
+    }
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+.sm-about-img {
+    bottom: -50px;
+    right: -15px;
+    border: 8px solid #fff;
+    border-radius: $border-radius-xl;
+    .sm-img {
+        border-radius: $border-radius-xl;
+    }
+}
+.about-list {
+    margin-bottom: 42px;
+}
+.img-with-bg {
+    .item-img {
+        background-color: $color-secondary-100;
+        border-radius: 20px;
+        img {
+            border-radius: 20px 0 0 20px;
+        }
+        .moving-text-wrap {
+            top: 50%;
+            transform: translateY(-50%);
+            right: 12%;
+        }
+        .rt-shape {
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+.rt-about-content {
+    .description {
+        @include media-only ("md", min) {
+            width: 50%;
+            flex: 0 0 50%;
+        }
+    }
+}
+.moving-text-wrap {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    &:hover {
+        .text-img {
+            .icon-box {
+                .icon {
+                    i {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+    .text-img {
+        img {
+            animation: rt-circle 25s linear infinite;
+        }
+    }
+    .icon-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        .icon {
+            height: 78px;
+            width: 78px;
+            border-radius: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-secondary;
+            i {
+                transform: rotate(143.87deg);
+                transition: all .4s;
+                &::before {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    &.style-2 {
+        top: 0;
+        right: 0;
+        .icon-box {
+            .icon {
+                background-color: $color-body;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

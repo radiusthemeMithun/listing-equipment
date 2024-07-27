@@ -1,0 +1,70 @@
+/**
+ * Components: Input.
+ */
+
+ .input-group {
+    width: 100%;
+    position: relative;
+    .form-control {
+        border-radius: 8px !important;
+        height: 70px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 28px;
+        color: $color-primary;
+        padding: 0 0 0 20px;
+        background-color: $color-white;
+        color: $color-primary;
+        border: 1px solid #000;
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+            border-color: $color-white;
+            background-color: transparent;
+        }
+        &::placeholder {
+            color: #696969;
+        }
+    }
+    .btn-outline-secondary {
+        border: 0;
+        background-color: $color-secondary;
+        border-radius: $border-radius-sm !important;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .4s ease-in-out;
+        padding: 13px 40px 10px;
+        z-index: 4;
+        color: $color-white;
+        font-size: 14px;
+        font-weight: $font-semibold;
+        height: 50px;
+        margin-top: 5px;
+        @include media-only ("xs", min) {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 11px;
+            margin-top: 0;
+        }
+        i {
+            margin-left: 5px;
+            &::before {
+                color: $color-white;
+            }
+        }
+        &:hover {
+            background-color: $color-black;
+            color: $color-white;
+            @include media-only ("xs", min) {
+                background-color: $color-primary;
+                color: $color-white;
+            }
+        }
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+}

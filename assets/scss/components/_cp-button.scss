@@ -1,0 +1,261 @@
+
+.equipment-button {
+	.equipment-btn {
+		font-size: 14px;
+		padding: 14px 28px;
+		font-weight: $font-semibold;
+		line-height: normal;
+		text-transform: capitalize;
+		text-align: center;
+		display: inline-block;
+		transition: all .4s ease-in-out;
+        border-radius: $border-radius-sm;
+		color: $color-secondary;
+		z-index: 1;
+		background-color: $color-primary;
+		font-family: $font-title;
+		position: relative;
+		&::before {
+			position: absolute;
+			content: "";
+			left: 100%;
+			width: 0%;
+			height: 100%;
+			background-color: $color-secondary;
+			border-radius: $border-radius-sm;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.8s ease;
+			z-index: -1;
+			top: 0;
+		}
+		i {
+			margin-left: 5px;
+			&::before {
+				color: $color-secondary;
+				transition: all .8s ease-in-out;
+				font-weight: $font-medium;
+			}
+		}
+		&:hover {
+			color: $color-white;
+			&::before {
+				left: 0;
+				width: 100%;
+				opacity: 1;
+				visibility: visible;
+				transition: width 0.4s ease;
+			}
+			i {
+				&::before {
+					color: $color-white;
+				}
+			}
+		}
+		&.ghost-btn {
+			border: 1px solid #313131;
+			background-color: transparent;
+			&::before {
+				background-color: #222222;
+			}
+			&:hover {
+				color: $color-white;
+				border-color: #222222;
+
+			}
+		}
+		&.style-2 {
+			background-color: $color-gray;
+            color: $color-black;
+			&:hover {
+				color: $color-black;
+				i {
+					&::before {
+						color: $color-black;
+					}
+				}
+			}
+			&::before {
+				background-color: $color-primary;
+			}
+			i {
+				&::before {
+					color: #696969;
+					transition: all .4s ease-in-out;
+				}
+			}
+		}
+		&.style-3 {
+			background-color: #303030;
+            color: $color-white;
+			&::before {
+				background-color: $color-secondary;
+			}
+			&:hover {
+				color: $color-white;
+			}
+			i {
+				&::before {
+					color: $color-white;
+					transition: all .4s ease-in-out;
+				}
+			}
+		}
+		&.style-4 {
+			&::before {
+				background-color: #222222;
+			}
+		}
+	}
+}
+
+.favourite-button {
+	.favourite-btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 36px;
+		width: 36px;
+		border-radius: 100px;
+		background-color: $color-white;
+		transition: all .3s ease-in-out;
+		border: 1px solid $color-border;
+		&:hover {
+			background-color: $color-primary;
+			border-color: $color-primary;
+			i {
+				&::before {
+					color: $color-white;
+				}
+			}
+		}
+		i {
+			&::before {
+				color: $color-body;
+				transition: all .3s ease-in-out;
+			}
+		}
+	}
+}
+
+.filter-btn {
+	padding: 12px 30px;
+	font-weight: $font-semibold;
+	width: 100%;
+	text-transform: capitalize;
+	text-align: center;
+	display: inline-block;
+	border-radius: $border-radius-sm;
+	background-color: $color-secondary;
+	transition: all .3s ease-in-out;
+	border: 0;
+	color: $color-white;
+	margin-bottom: 8px;
+	&:hover {
+		background-color: $color-body;
+	}
+	&:focus {
+		outline: 0;
+		box-shadow: none;
+	}
+	&.reset-btn {
+		background-color: $color-body;
+		&:hover {
+			background-color: $color-secondary;
+		}
+		i {
+			margin-right: 5px;
+		}
+	}
+}
+.message-btn {
+	font-size: 14px;
+	font-family: $font-title;
+	background-color: #F4F4F4;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 18px;
+	border-radius: $border-radius-sm;
+	transition: all .3s ease-in-out;
+	text-transform: capitalize;
+	height: 48px;
+	width: 100%;
+	&:hover {
+		background-color: $color-secondary;
+		color: $color-white;
+		i {
+			&::before {
+				color: $color-white;
+			}
+		}
+	}
+	i {
+		margin-right: 10px;
+		&::before {
+			transition: all .3s ease-in-out;
+		}
+	}
+}
+
+.fileUpload {
+	background-color: #F5F6F7;
+	border-radius: $border-radius-sm;
+	border: 1px solid #CFD4DB;
+	color: $color-body;
+	font-size: 1em;
+	font-weight: $font-medium;
+	overflow: hidden;
+	padding: 18px 60px;
+	position: relative;
+	text-align: center;
+	width: auto;
+   	cursor: pointer;
+	transition: all .3s ease-in-out;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	@include media-only ("sm", min) {
+		width: 260px;
+		padding: 18px 70px;
+	}
+}
+.fileUpload:hover, .fileUpload:active, .fileUpload:focus {
+	background-color: $color-secondary;
+  	cursor: pointer;
+	border-color: $color-secondary;
+}
+.fileUpload input.upload-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    height: 60px;
+	width: auto;
+  	cursor: pointer;
+	@include media-only ("sm", min) {
+		width: 260px;
+	}
+}
+.upload-icon {
+	font-family: $font-title;
+	display: block;
+	i {
+		margin-right: 10px;
+		&::before {
+			transition: all .3s ease-in-out;
+		}
+	}
+}
+
+
+
+
+
+
+

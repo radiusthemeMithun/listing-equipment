@@ -1,0 +1,154 @@
+/**
+ * Layout - Footer.
+ */
+
+.footer-1 {
+    z-index: 1;
+    background-color: $color-black;
+    .rt-shape {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+.footer-top {
+    z-index: 1;
+    position: relative;
+    padding: 80px 0;
+    @include media-only ("lg", min) {
+        padding: 110px 0;
+    }
+}
+
+
+
+.footer-contact {
+    .rt-contact {
+        color: #999999;
+        line-height: 32px;
+        &.address {
+            margin-bottom: 15px;
+        }
+        &.phone {
+            font-size: 20px;
+            font-weight: $font-semibold;
+            line-height: 26px;
+            margin-bottom: 10px;
+            a {
+                color: #F7F6F6;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+        &.mail {
+            a {
+                color: #999999;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+
+.footer-link {
+    ul {
+        li {
+            position: relative;
+            &:last-child {
+                .link {
+                    margin-bottom: 0;
+                }
+            }
+            .link {
+                position: relative;
+                transition: all .4s ease;
+                margin-bottom: 12px;
+                color: #999999;
+                font-weight: $font-normal;
+                font-size: 15px;
+                &:hover {
+                    &::after {
+                        width: 100%;
+                        left: 0;
+                        opacity: 1;
+                    }
+                }
+                &::after {
+                    content: "";
+                    height: 1px;
+                    width: 0;
+                    background-color: $color-white;
+                    position: absolute;
+                    bottom: 1px;
+                    right: 0;
+                    opacity: 0;
+                    transition: .5s;
+                }
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.footer-input {
+    p {
+        color: #999999;
+    }
+}
+
+.footer-logo {
+    p {
+        color: #999999;;
+        font-weight: $font-normal;
+        margin-bottom: 25px;
+    }
+}
+
+.footer-bottom {
+    padding: 30px 0;
+    background-color: #191919;
+}
+
+.footer-bottom-text {
+    color: #999999;
+    font-size: 16px;
+    a {
+        color: #999999;
+        transition: all .3s ease-in-out;
+        font-size: 16px;
+        &:hover {
+            color: $color-white;
+        }
+    }
+}
+
+.footer-widget-title {
+    font-weight: $font-semibold;
+    font-size: 20px;
+    color: $color-white;
+    margin-bottom: 26px;
+    padding-bottom: 20px;
+    position: relative;
+    &::after {
+        content: "";
+        height: 4px;
+        width: 30px;
+        background-color: $color-primary;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 10px;
+    }
+}
+
+
+
+

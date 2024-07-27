@@ -1,0 +1,39 @@
+.rt-categories-slider {
+    @include media-only ("lg", min) {
+        position: static;
+        margin: 0 55px;
+    }
+}
+
+.rt-categories-box {
+    .item-icon {
+        height: 130px;
+        width: 130px;
+        border-radius: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-white;
+        border: 1px solid #E6E4DC;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+        margin-bottom: 16px;
+    }
+    .content {
+        .sm-title {
+            font-size: 15px;
+            font-weight: $font-medium;
+            a {
+                color: $color-secondary;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+        .counting-categories {
+            font-size: 14px;
+            font-weight: $font-medium;
+            color: $color-font;
+        }
+    }
+}
