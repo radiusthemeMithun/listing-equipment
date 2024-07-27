@@ -4,6 +4,11 @@
             background-color: $color-gray;
         }
     }
+    &.style-2 {
+        @include media-only ("lg", min) {
+           margin-bottom: 20px;
+        }
+    }
 }
 
 
@@ -72,7 +77,37 @@
             }
         }
     }
+    &.style-3 {
+        .content {
+            .favourite-button {
+                right: 24px;
+                top: auto;
+                bottom: 24px;
+                .favourite-btn {
+                    background-color: $color-gray;
+                    border-color: $color-gray;
+                    &:hover {
+                        background-color: $color-primary;
+                        border-color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
 }
+
+.rt-listing-slider {
+    @include media-only ("lg", min) {
+        position: static;
+    }
+    .swiper-button-next {
+        right: -60px;
+    }
+    .swiper-button-prev {
+        left: -60px;
+    }
+}
+
 
 
 //........listing Elements.......//

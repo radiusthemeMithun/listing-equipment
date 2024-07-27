@@ -260,9 +260,9 @@
 /*-------------------------------------
      Brand Slider
     -------------------------------------*/
-    var swiper3 = new Swiper(".rt-brand-slider", {
-      spaceBetween: 58,
-      slidesPerView: 5,
+    var swiper3 = new Swiper(".rt-listing-slider", {
+      spaceBetween: 24,
+      slidesPerView: 4,
       speed: 1000,
       loop: true,
       breakpoints: {
@@ -270,20 +270,24 @@
           slidesPerView: 1,
         },
         374: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         576: {
-          slidesPerView: 3,
+          slidesPerView: 1,
         },
         768: {
-          slidesPerView: 3,
+          slidesPerView: 2,
         },
         992: {
-          slidesPerView: 4,
+          slidesPerView: 3,
         },
         1200: {
-          slidesPerView: 5,
+          slidesPerView: 4,
         },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
     });
  

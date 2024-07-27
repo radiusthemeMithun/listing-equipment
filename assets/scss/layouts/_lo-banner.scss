@@ -1,15 +1,26 @@
 .rt-hero-wrap {
-    padding: 100px 0;
-    z-index: 1;
-    @include media-only ("md", min) {
-        padding: 172px 0 90px 0;
-    }
-    height: 100%;
-    width: 100%;
-    background-image: url(../../media/bg/searchbox.png);
+    background-image: url(../../media/banner/banner-3.jpg);
     background-repeat: no-repeat;
-    background-position: bottom;
     background-size: cover;
+    width: 100%;
+    @include media-only ("lg", min) {
+        padding: 323px 0 227px;
+    }
+}
+
+.hero-title {
+    @include media-only ("lg", min) {
+        width: 788px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .title {
+        color: $color-white;
+        font-size: 60px;
+        font-weight: $font-bold;
+        text-transform: capitalize;
+        line-height: 70px;
+    }
 }
 
 

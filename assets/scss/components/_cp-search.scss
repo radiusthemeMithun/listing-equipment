@@ -3,6 +3,11 @@
     @include media-only ("lg", min) {
         transform: translateY(-25px);
     }
+    &.style-2 {
+        @include media-only ("lg", min) {
+            transform: translateY(-45px);
+        }
+    }
 }
 
 .banner-search-filter {

@@ -1,4 +1,7 @@
 .rt-banner-wrap {
+    @include media-only ("lg", min) {
+       padding: 140px 0;
+    }
     background-image: url(../../media/banner/banner-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,14 +39,20 @@
 .rt-banner-post-wrap {
     @include media-only ("lg", min) {
        margin-top: -100px;
+       position: relative;
+       z-index: 2;
     }
 }
 
 .post-banner-layout {
     @include media-only ("lg", min) {
         transform: translateY(100px);
-        position: relative;
-        z-index: 1;
+    }
+    &.style-2 {
+        @include media-only ("lg", min) {
+            transform: translateY(80px);
+          
+        }
     }
 }
 
