@@ -1,36 +1,28 @@
 .rt-breadcrumb-wrap {
     padding: 80px 0;
     @include media-only ("md", min) {
-        padding: 170px 0 75px;
+        padding: 145px 0 55px;
     }
-    &::before {
-        background-image: url(../../media/banner/breadcrumb-1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        content: "";
-        height: 100%;
-        width: 100%;
-        filter: grayscale(100%);
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-    }
+    background-color: #FCFAF4;
+    position: relative;
+    z-index: 1;
     &::after {
         content: "";
         height: 100%;
         width: 100%;
-        background: linear-gradient(90deg, #0D0D0D 60.65%, #1B1811 100%);
-        opacity: 0.7;
+        background-image: url(../../media/bg/searchbox.png);
+        background-repeat: no-repeat;
         position: absolute;
-        top: 0;
-        left: 0;
         bottom: 0;
+        left: 0;
         right: 0;
+        background-position: bottom;
+        z-index: -1;
+        background-size: contain;
     }
 }
+
+
 
 .breadcrumb {
     z-index: 1;
@@ -45,15 +37,15 @@
         }
         &::after {
             content: "\e820";
-            font-family: "rt-clawyer";
+            font-family: "rt-equipment";
             font-size: 11px;
             font-weight: $font-semibold;
-            color: #797979;
+            color: $color-font;
             padding: 0 10px;
         }
         a {
             transition: all .3s ease-in-out;
-            color: #969696;
+            color: $color-font;
             font-family: $font-title;
             &:hover {
                 color: $color-secondary;
@@ -74,14 +66,14 @@
 }
 
 .breadcrumb-title {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: $font-semibold;
     text-transform: capitalize;
-    color: $color-white;
+    color: $color-black;
     z-index: 1;
     margin-bottom: 10px;
     @include media-only ("sm", min) {
-        font-size: 48px;
+        font-size: 40px;
         line-height: 60px;
     }
 }

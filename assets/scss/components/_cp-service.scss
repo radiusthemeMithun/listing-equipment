@@ -1,147 +1,43 @@
 .rt-service-wrap {
-    background-color: #1A1A1A;
+    background-color: $color-secondary-100;
     z-index: 1;
-    .bg-shape {
-        z-index: -1;
-        left: 0;
-        right: 0;
-        height: 100%;
-        text-align: center;
-        img {
-            opacity: .2;
-            height: 100%;
+    .section-heading {
+        @include media-only ("lg", min) {
+            width: 576px;
         }
-    }
-    .rt-text-strok {
-        bottom: 30px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        -webkit-text-stroke: 1px #313131;
     }
 }
 
 .rt-service-box {
-    border-radius: $border-radius-lg;
-    background-color: #222222;
+    border-radius: 50px;
+    background-color: $color-white;
     padding: 35px 30px;
-    position: relative;
-    overflow: hidden;
-    &::before {
-        content: "";
-        height: 100%;
-        width: 100%;
-        background-color: $color-white;
-        backface-visibility: hidden;
-        transition: all 0.4s ease;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        border-radius: $border-radius-lg;
-        opacity: 0;
-        transform: translate(-50%, -50%) scaleY(0);
-        transform-origin: bottom;
-    }
-    &:hover {
-        &::before {
-           opacity: 1;
-           visibility: visible;
-            transform: translate(-50%, -50%) scaleY(1);
-            transition: all 0.4s ease;
-        }
-        .info-box {
-            .item-icon {
-                img {
-                    transform: scale(1.2);
-                }
-            }
-            .content {
-                .title {
-                    a {
-                        color: $color-primary;
-                    }
-                }
-            }
-        }
+    @include media-only ("lg", min) {
+        padding: 60px 30px 50px;
     }
     .info-box {
+        .item-icon {
+            height: 90px;
+            width: 90px;
+            background-color: $color-primary;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: $border-radius-xl;
+        }
         .content {
-            margin-left: 38px;
             position: relative;
-            &::before {
-                content: "";
-                height: 40px;
-                width: 2px;
-                background-color: #383838;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: -18px;
-            }
             .title {
-                margin-bottom: 0;
+                font-size: 20px;
+                font-weight: $font-semibold;
                 a {
-                    color: $color-white;
                     transition: all .4s ease-in-out;
                 }
             }
         }
     }
-    &.style-2 {
-        .info-box {
-            .item-icon {
-                margin-bottom: 12px;
-                height: 100px;
-                width: 100px;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: $border-radius-lg;
-                background-color: #373737;
-                position: relative;
-                z-index: 1;
-            }
-            .content {
-                &::before {
-                    display: none;
-                }
-            }
-        }
-    }
-    &.style-3 {
-        background-color: $color-white;
-        padding: 50px 40px 45px;
-        &::before {
-            display: none;
-        }
-        .item-icon {
-            background: linear-gradient(180deg, #FFFCF6 0%, #F5E3BF 100%);
-            border: 1px solid #F9E8CA;
-            border-radius: 18px;
-            height: 80px;
-            width: 80px;
-        }
-        .content {
-            .title {
-                a {
-                    color: $color-primary;
-                    &:hover {
-                        color: $color-secondary;
-                    }
-                }
-            }
-            p {
-                text-transform: capitalize;
-            }
-        }
-    }
 }
 
-.service-background {
-    background-image: url(../../media/bg/service-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
 
