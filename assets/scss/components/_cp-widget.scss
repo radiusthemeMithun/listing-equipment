@@ -17,9 +17,9 @@
 	.sub-title {
 		margin-bottom: 15px;
 		font-size: 20px;
-		font-weight: $font-medium;
+		font-weight: $font-semibold;
 		text-transform: capitalize;
-        color: $color-primary;
+        color: $color-secondary;
 	}
 }
 .widget-search {
@@ -34,11 +34,12 @@
 			height: 46px;
 			font-size: 14px;
 			font-family: $font-title;
-			color: $color-primary;
+			color: $color-secondary;
 			padding: 0 0 0 10px;
 			&:focus {
 				outline: 0;
 				box-shadow: none;
+				border-color: $color-secondary;
 			}
 			&::placeholder {
 				color: $color-body;
@@ -58,12 +59,17 @@
 			&:hover {
 				box-shadow: none;
 				i {
-					animation: headShake 1.5s;
+					&::before {
+						animation: headShake 1.5s;
+					}
 				}
 			}
 			i {
-				transition: all .4s ease;
-				color: $color-primary;
+				&::before {
+					color: $color-body;
+					transition: all .4s ease;
+					font-size: 18px;
+				}
             }
 			&:focus {
 				outline: 0;
@@ -117,6 +123,7 @@
 					font-family: $font-title;
 					color: $color-body;
 					line-height: 16px;
+					text-transform: capitalize;
 				}
 			}
 		}
@@ -151,7 +158,7 @@
 			.entry-meta {
 				i {
 					&::before {
-						color: $color-secondary;
+						color: $color-primary;
 						position: relative;
 						top: -2px;
 						margin-right: 4px;
@@ -164,18 +171,17 @@
                 font-size: 14px;
 			}
 			.title {
-				font-size: 16px;
+				font-size: 15px;
 				line-height: 18px;
 				text-transform: capitalize;
-				font-weight: $font-medium;
 				a {
-					color: $color-primary;
+					color: $color-black;
 					display: -webkit-box;
 					-webkit-line-clamp: 2;
 					-webkit-box-orient: vertical;
 					overflow: hidden;
 					&:hover {
-						color: $color-secondary;
+						color: $color-primary;
 					}
 				}
 			}

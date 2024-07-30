@@ -77,5 +77,23 @@
             }
         }
     }
+    &.style-3 {
+        ul {
+            li {
+                a {
+                    border-radius: $border-radius-sm;
+                    background-color: transparent;
+                    i {
+                        &::before {
+                            color: $color-secondary;
+                        }
+                    }
+                    &:hover {
+                        background-color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
 }
 

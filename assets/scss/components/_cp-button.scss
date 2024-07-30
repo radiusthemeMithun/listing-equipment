@@ -172,19 +172,20 @@
 }
 .message-btn {
 	font-size: 14px;
-	font-family: $font-title;
 	background-color: #F4F4F4;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	padding: 8px 18px;
+	padding: 8px 20px;
 	border-radius: $border-radius-sm;
 	transition: all .3s ease-in-out;
 	text-transform: capitalize;
 	height: 48px;
 	width: 100%;
+	color: $color-black;
+	font-weight: $font-medium;
 	&:hover {
-		background-color: $color-secondary;
+		background-color: $color-primary;
 		color: $color-white;
 		i {
 			&::before {
@@ -193,9 +194,10 @@
 		}
 	}
 	i {
-		margin-right: 10px;
+		margin-right: 5px;
 		&::before {
 			transition: all .3s ease-in-out;
+			color: $color-black;
 		}
 	}
 }

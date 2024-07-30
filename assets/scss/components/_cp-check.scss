@@ -64,29 +64,5 @@
 .rt-check-list .radio-custom:checked + .radio-custom-label .check-text {
     color: $color-secondary;
 }
- 
- 
-.form-check {
-    margin-bottom: 0;
-    .form-check-input {
-        width: 23px;
-        height: 23px;
-        margin-top: 0;
-        border: 1px solid #C6C6C6;
-        background-color: $color-white;
-        &:focus {
-            box-shadow: none;
-        }
-    }
-    .form-check-label {
-        color: #686772;
-        font-weight: $font-medium;
-        margin-left: 5px;
-    }
- }
- 
-.form-check-input:checked {
-    background-color: $color-primary;
-    border-color: $color-primary;
-}
+
   

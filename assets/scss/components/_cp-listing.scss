@@ -9,6 +9,11 @@
            margin-bottom: 20px;
         }
     }
+    &.style-3 {
+        .section-heading {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 
@@ -227,7 +232,11 @@
 }
 
 //........listing Details.......//
-
+.rt-listing-details-wrap {
+    @include media-only ("lg", min) {
+        padding: 60px 0;
+    }
+}
 .rt-listing-details-top {
     margin-bottom: 20px;
     .title {

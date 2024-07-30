@@ -7,7 +7,7 @@
 
 .rt-comment-box {
     background-color: $color-secondary-100;
-    border: 1px solid #E5DECA;
+    border: 1px solid #FFEFBD;
     border-radius: $border-radius-md;
     padding: 30px;
     @include media-only ("xs", min) {
@@ -22,7 +22,6 @@
         font-family: $font-body;
     }
     p {
-        color: $color-border;
         margin-bottom: 20px;
     }
     .contact-form-style-1 {
@@ -33,7 +32,7 @@
                 background-color: $color-white;
                 border: 1px solid #E5DECA;
                 &::placeholder {
-                    color: #999999;
+                    color: $color-font;
                 }
             }
             .rt-textarea  {
@@ -43,13 +42,13 @@
         }
     }
 }
-.rt-contact-layout {
-    @include media-only ("lg", min) {
-        transform: translateY(-55px);
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-}
+// .rt-contact-layout {
+//     @include media-only ("lg", min) {
+//         transform: translateY(-55px);
+//         margin-left: 30px;
+//         margin-right: 30px;
+//     }
+// }
 .rt-contact-box {
     background-color: $color-white;
     border: 1px solid #DBDBDB;
@@ -71,7 +70,7 @@
             content: "";
             height: 5px;
             width: 40px;
-            background-color: $color-secondary;
+            background-color: $color-primary;
             border-radius: 10px;
             position: absolute;
             bottom: 0;
@@ -161,22 +160,21 @@
         font-size: 16px;
         line-height: 28px;
         text-transform: capitalize;
-        color: $color-border;
-        font-family: "Mada", "sans-serif";
+        color: $color-font;
     }
     input[type=checkbox] + label:before {
         content: "\2714";
         border: 1px solid #C6C6C6;
         border-radius: 4px;
         display: inline-block;
-        width: 18px;
-        height: 18px;
-        padding-left: 2px;
+        width: 23px;
+        height: 23px;
+        padding-left: 5px;
         padding-bottom: 0;
         margin-right: 5px;
         color: transparent;
         transition: .2s;
-        line-height: 18px;
+        line-height: 22px;
     }
       
     input[type=checkbox] + label:active:before {
@@ -191,9 +189,7 @@
 }
 
 .rt-map {
-    border-radius: $border-radius-md;
     iframe {
-        border-radius: $border-radius-md;
         filter: grayscale(100%);
         width: 100%;
     }
@@ -202,25 +198,37 @@
 .contact-list {
     display: flex;
     gap: 23px;
-    border-bottom: 1px solid #E4E8EF;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
+    position: relative;
+    @include media-only ("lg", min) {
+        width: 33.33%;
+        flex: 0 0 33.33%;
+    }
+    &::after {
+        content: "";
+        height: 74px;
+        width: 100%;
+        border-right: 2px solid #EBEBEB;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
     &:last-child {
-        border-bottom: 0;
-        padding-bottom: 0;
-        margin-bottom: 0;
+        &::after {
+            display: none;
+        }
     }
     .item-icon {
         height: 70px;
         width: 70px;
         border-radius: 100%;
-        background-color: $color-secondary-100;
+        background-color: #FFFBED;
+        border: 1px solid #FFC100;
         display: inline-flex;
         align-items: center;
         justify-content: center;
         i {
             &::before {
-                color: $color-secondary;
+                color: $color-primary;
                 font-size: 24px;
                 font-weight: $font-medium;
             }
@@ -231,18 +239,16 @@
         .label {
             font-size: 20px;
             font-weight: $font-medium;
-            color: $color-primary;
-            font-family: $font-title;
+            color: $color-black;
         }
         .info {
-            font-family: $font-title;
             line-height: 26px;
         }
         .contact {
             line-height: 26px;
             a {
-                font-family: $font-title;
                 transition: all .3s ease-in-out;
+                color: $color-body;
                 &:hover {
                     color: $color-secondary;
                 }

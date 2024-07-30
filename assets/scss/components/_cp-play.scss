@@ -7,7 +7,7 @@
 .play-btn {
     height: 60px;
     width: 60px;
-    background-color: $color-secondary;
+    background-color: $color-primary;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -25,9 +25,6 @@
                 font-size: 24px;
             }
         }
-    }
-
-    &:hover {
     }
 }
 

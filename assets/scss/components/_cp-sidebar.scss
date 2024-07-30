@@ -59,7 +59,6 @@
         }
     }
 }
-
 .sidebar-select {
     .select2-selection__arrow {
         height: 20px;
@@ -93,6 +92,114 @@
         padding-left: 0;
     }
 }
+
+.rt-sidebar-2 {
+    background-color: $color-white;
+    border: 1px solid #E3E3E3;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.sidebar-subtitle {
+    font-family: $font-title;
+    font-size: 20px;
+    font-weight: $font-medium;
+    margin-bottom: 25px;
+}
+
+.rt-author-status {
+    gap: 10px;
+    .content {
+        flex: 1;
+        .name {
+            font-weight: $font-medium;
+            color: $color-black;
+        }
+        .status {
+            font-family: $font-title;
+            font-size: 14px;
+            position: relative;
+            display: inline-block;
+            &::after {
+                content: "";
+                height: 6px;
+                width: 6px;
+                background-color: #00B91E;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -10px;
+                border-radius: 100%;
+            }
+        }
+    }
+}
+.author-contact-list {
+    margin-bottom: 20px;
+    li {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            font-family: $font-title;
+            color: $color-body;
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.rt-follow-area {
+    .xs-title {
+        color: $color-body;
+        font-size: 16px;
+        font-weight: $font-normal;
+        margin-bottom: 12px;
+    }
+}
+.sdb-filter-contact {
+    background-color: $color-white;
+    border: 1px solid #E0E3E7;
+    border-radius: 5px;
+    height: 43px;
+    width: 100%;
+    margin-bottom: 7px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 15px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    a {
+        font-size: 14px;
+        color: $color-font;
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: $color-primary;
+        }
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+.sdb-filter-price {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    justify-content: center;
+    margin-bottom: 12px;
+    height: 47px;
+    color: $color-secondary;
+    font-size: 20px;
+    font-weight: $font-semibold;
+    span {
+        font-weight: $font-normal;
+        font-size: 16px;
+    }
+}
+
+
 
 
 .form-control:disabled, .form-control[readonly] {

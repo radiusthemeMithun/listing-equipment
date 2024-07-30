@@ -5,8 +5,11 @@
     background-color: transparent;
     border: 1px solid #E0E3E7;
     border-radius: $border-radius-sm;
-    padding: 15px 24px;
+    padding: 10px 24px;
     width: 100%;
+    &.style-2 {
+        border-radius: 100px;
+    }
 }
 .rt-pagination {
     gap: 5px;
