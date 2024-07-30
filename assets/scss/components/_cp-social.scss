@@ -25,32 +25,38 @@
     margin-top: 15px;
     @include media-only ("480px", min) {
         position: absolute;
-        top: 30px;
-        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 30px;
         margin-top: 0;
     }
     ul {
-        gap: 6px;
         li {
+            margin-bottom: 8px;
+            &:last-child {
+                margin-bottom: 0;
+            }
             a {
                 height: 36px;
                 width: 36px;
                 border-radius: 100%;
-                background: #F8F8F8;
+                background-color: transparent;
                 border: 1px solid #DCDCDC;
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
                 transition: all .3s ease-in-out;
                 i {
+                    position: relative;
+                    top: 1px;
                     &::before {
                         color: $color-body;
                         transition: all .3s ease-in-out;
                     }
                 }
                 &:hover {
-                    background-color: $color-secondary;
-                    border-color: $color-secondary;
+                    background-color: $color-primary;
+                    border-color: $color-primary;
                     i {
                         &::before {
                             color: $color-white;
@@ -61,34 +67,13 @@
         }
     }
     &.style-2 {
-        position: absolute;
-        top: 30px;
-        right: 40px;
-        @include media-only ("sm", min) {
-            top: 50%;
-            transform: translateY(-50%);
-            right: 30px;
-        }
-        ul {
-            li {
-                margin-bottom: 10px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-    &.style-3 {
         position: unset;
+        margin-top: 0;
+        transform: translateY(0);
         ul {
+            gap: 8px;
             li {
-                a {
-                    border-radius: $border-radius-sm;
-                    background-color: transparent;
-                    &:hover {
-                        background-color: $color-secondary;
-                    }
-                }
+                margin-bottom: 0;
             }
         }
     }

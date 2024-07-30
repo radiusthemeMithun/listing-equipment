@@ -24,7 +24,7 @@
             color: $color-body;
             transition: all .4s ease-in-out;
             font-size: 16px;
-            font-weight: $font-semibold;
+            font-weight: $font-medium;
             padding: 0;
             &.prev, &.next {
                 width: 100%;
@@ -45,7 +45,7 @@
             }
             &:hover {
                 color: $color-white;
-                background-color: $color-secondary;
+                background-color: $color-primary;
                 &.prev, &.next {
                     i {
                         color: $color-white;
@@ -57,7 +57,7 @@
                 box-shadow: none;
             }
             &.active {
-                background-color: $color-secondary;
+                background-color: $color-primary;
                 color: $color-white;
             }
         }
@@ -66,13 +66,13 @@
 .previous-pagination {
     font-weight: $font-medium;
     a {
-        color: $color-body;
+        color: $color-font;
         transition: all .3s ease-in-out;
         &:hover {
             color: $color-secondary;
             i {
                 &::before {
-                    color: $color-body;
+                    color: $color-secondary;
                 }
             }
         }
@@ -82,7 +82,7 @@
                 display: none;
             }
             &::before {
-                color: $color-secondary;
+                color: $color-primary;
                 transition: all .3s ease-in-out;
                 font-size: 28px;
                 position: relative;

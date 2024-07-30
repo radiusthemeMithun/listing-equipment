@@ -314,11 +314,11 @@ if (yPopup.length) {
     let priceSlider = document.getElementById("distance-range-filter");
     if (priceSlider) {
         noUiSlider.create(priceSlider, {
-            start: [30, 130],
+            start: [0, 200],
             connect: true,
             range: {
                 min: 0,
-                max: 200,
+                max: 300,
             },
             format: wNumb({
                 decimals: 0,

@@ -44,6 +44,12 @@
     }
 }
 
+.rt-banner-post-wrap2 {
+    @include media-only ("lg", min) {
+        padding: 0 0 110px;
+    }
+}
+
 .post-banner-layout {
     @include media-only ("lg", min) {
         transform: translateY(100px);
@@ -53,6 +59,9 @@
             transform: translateY(80px);
           
         }
+    }
+    &.style-3 {
+        transform: translateY(0px);
     }
 }
 

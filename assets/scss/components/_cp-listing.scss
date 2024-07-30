@@ -94,6 +94,14 @@
             }
         }
     }
+    &.style-4 {
+        .content {
+            padding: 25px 60px 0 0;
+            .title {
+                margin-bottom: 20px;
+            } 
+        }
+    }
 }
 
 .rt-listing-slider {
@@ -128,15 +136,47 @@
     }
 }
 .product-sorting {
-    gap: 50px;
+    gap: 30px;
 }
 
-.search-filter-form {
+.search-filter-form2 {
     .text {
         font-size: 14px;
         font-family: $font-title;
         display: inline-block;
         margin-right: 7px;
+    }
+    .select2-selection__arrow {
+        height: 20px;
+        
+        &::after {
+            border-bottom: 2px solid #4b4b4b;
+            border-right: 2px solid #4b4b4b;
+            right: -15px;
+            top: 45px;
+        }
+        b {
+            display: none;
+        }
+    }
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+        font-family: $font-title;
+        font-size: 14px;
+        font-weight: $font-medium;
+        background-color: $color-white;
+        color: #111;
+        border: 0;
+        border-radius: $border-radius-xs;
+        height: 40px;
+        width: 100%;
+        display: inline-block;
+        line-height: 40px;
+        padding: 0;
+    }
+    .select2-selection.select2-selection--single {
+        padding-left: 0;
     }
 }
 
@@ -187,20 +227,69 @@
 }
 
 //........listing Details.......//
-.rt-listing-details-wrap {
-    background-color: #f8f8f8;
+
+.rt-listing-details-top {
+    margin-bottom: 20px;
+    .title {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .entry-meta-list {
+        li {
+            &:last-child {
+                a {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+            a {
+                position: relative;
+                &::after {
+                    content: "";
+                    height: 15px;
+                    width: 100%;
+                    border-right: 1.5px solid #b6b6b6;
+                    position: absolute;
+                    top: 5px;
+                    right: -14px;
+                }
+                i {
+                    &::before {
+                        color: $color-body;
+                    }
+                }
+                color: $color-body;
+                &:hover {
+                    color: $color-primary;
+                    i {
+                        &::before {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.listing-details-img {
+    margin-bottom: 30px;
+    img {
+        border-radius: $border-radius-lg;
+    }
 }
 .listing-dtl-box {
     background-color: $color-white;
-    border: 1px solid #E3E3E3;
+    border: 1px solid $color-border;
     padding: 23px 30px;
     border-radius: $border-radius-md;
     margin-bottom: 30px;
     .title {
-        font-size: 20px;
-        font-weight: $font-medium;
+        font-size: 24px;
+        font-weight: $font-semibold;
         line-height: 26px;
         margin-bottom: 10px;
+        color: $color-secondary;
         span {
             color: #576982;
         }
@@ -209,15 +298,15 @@
 //........listing Overview.......//
 .rt-overview {
     p {
-        color: $color-border;
+        color: $color-font;
     }
 }
 //........listing Education.......//
-.education-list {
+.rt-dtl-features-list {
     li {
         position: relative;
         font-family: $font-title;
-        color: $color-border;
+        color: $color-font;
         line-height: 26px;
         padding-left: 20px;
         margin-bottom: 5px;
@@ -229,7 +318,7 @@
             height: 5px;
             width: 5px;
             border-radius: 100%;
-            background-color: $color-border;
+            background-color: $color-font;
             position: absolute;
             top: 50%;
             left: 0;
@@ -266,211 +355,27 @@
         }
     }
 }
-//........listing cost.......//
-.cost-list {
+//........listing specification.......//
+
+.rt-specification-list {
     li {
-        background-color: #F8F8F8;
-        border-radius: $border-radius-xs;
+        background-color: #F4F4F4;
         padding: 10px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         // margin-bottom: 10px;
         &:nth-child(even) {
             background-color: $color-white;
         }
         .text {
-            font-family: $font-title;
-            color: $color-border;
+            font-weight: $font-medium;
         }
         .element {
-            font-family: $font-title;
-            color: $color-primary;
-        }
-    }
-}
-//........listing Map.......//
-.rt-location-map {
-    .title {
-        margin-bottom: 20px;
-    }
-}
-//........listing Guest Review.......//
-.guest-review-layout {
-    gap: 30px;
-    .review-box {
-        background-color: #F5F6F7;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 138px;
-        width: 100%;
-        border-radius: $border-radius-sm;
-        @include media-only ("xs", min) {
-            width: 170px;
-        }
-        .review-number {
-            color: $color-secondary;
-            font-size: 50px;
-            font-weight: $font-semibold;
-            line-height: 65px;
-        }
-        .text {
-            font-family: $font-title;
-            color: #0F294D;
-            font-weight: $font-semibold;
-        }
-        .number {
-            font-family: $font-title;
-            color: $color-primary;
-            font-weight: $font-medium;
-            margin-bottom: 13px;
-        }
-    }
-}
-//........Progress wrap......//
-.rt-progrss-bar-wrapper {
-    flex: 1;
-}
-.single-progrss-bar {
-    .single-progress {
-        margin-bottom: 20px;
-        padding-bottom: 5px;
-        position: relative; 
-        .title-bar {
-            .title {
-                font-weight: $font-medium;
-                line-height: 26px;
-                margin-bottom: 10px;
-                color: #010101;
-            }
-        }
-        .progress {
-            height: 6px;
-            border-radius: 100px;
-            background-color: #F6F5FB;
-            .progress-bar {
-                background: linear-gradient(270deg, #DEBB67 23.5%, #F5EDD9 108.2%);
-                border-radius: 100px;
-            }
-        }
-    }
-}
-.progress-review {
-    font-weight: $font-semibold;
-    font-size: 12px;
-    line-height: 20px;
-    color: $color-primary;
-    bottom: 20px;
-    right: 0;
-    background-color: #EBEEF1;
-    font-family: $font-title;
-    height: 18px;
-    width: 31px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-}
-
-//........listing User Review.......//
-.rt-user-review {
-    padding-right: 75px;
-}
-.listing-user-review {
-    .comment-post {
-        border-bottom: 1px solid #E2E6EC;
-        padding-left: 20px;
-        gap: 25px;
-        .content {
-            flex: 1;
-            .title-box {
-                padding-left: 10px;
-                margin-bottom: 15px;
-                &::after {
-                    content: "";
-                    height: 30px;
-                    width: 3px;
-                    background-color: $color-secondary;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    left: 0;
-                    border-radius: 100px;
-                }
-                .sm-title {
-                    color: $color-black;
-                    font-weight: $font-semibold;
-                    line-height: 26px;
-                    margin-bottom: 0;
-                }
-                .designation {
-                    color: #999999;
-                    font-size: 14px;
-                    font-family: $font-title;
-                }
-            }
-            p {
-                margin-bottom: 18px;
-            }
-            .rt-review {
-                @include media-only ("xs", min) {
-                    top: 25px;
-                    right: 0;
-                    position: absolute;
-                }
-            }
-        }
-        &:nth-child(odd) {
-            padding-left: 0;
-        }
-        &:nth-child(3) {
-            border-bottom: 0;
-            padding-bottom: 0;
-            padding-left: 25px;
-            @include media-only ("xs", min) {
-                padding-left: 60px;
-            }
+            color: $color-font;
+            margin-left: 12px;
         }
     }
 }
 
-.rt-user-add-review {
-    .review-area {
-        margin-bottom: 25px;
-        .review-wrap {
-            gap: 30px;
-            @include media-only ("lg", min) {
-                gap: 60px;
-            }
-            .rt-review {
-                .review {
-                    li {
-                        i {
-                            &::before {
-                                color: #D7D7D7;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .contact-form-style-1 {
-        .rt-form-control {
-            height: 50px;
-            background-color: transparent;
-            border: 1px solid #E0E3E7;
-        }
-        .submit-btn {
-            background-color: $color-secondary;
-            &:hover {
-                background-color: $color-black;
-            }
-        }
-    }
-}
+
 
 
 

@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>CLawyer | Listing Grid</title>
+    <title>Clequipment | Listing Grid</title>
 
     <!-- Meta Data -->
     <meta charset="UTF-8">
@@ -20,19 +20,18 @@
     <link rel="stylesheet" type="text/css" href="dependencies/popup/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="dependencies/swiper/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="dependencies/select2/css/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="dependencies/custom-font/css/rt-clawyer.css">
+    <link rel="stylesheet" type="text/css" href="dependencies/custom-font/css/rt-equipment.css">
     <link rel="stylesheet" type="text/css" href="dependencies/nouislider/nouislider.min.css">
     <link rel="stylesheet" type="text/css" href="dependencies/flatpickr/flatpickr.min.css">
    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Site Stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -63,14 +62,14 @@
             <header class="rt-header headroom d-none d-lg-block scrolling">
                 <!-- Header Main -->
                 <div class="header-main navbar-wrap d-flex align-items-center justify-content-between" id="navbar-wrap">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <div class="col-lg-2">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-xl-3">
                                 <div class="header-logo">
                                     <a href="index.html"><img src="media/logo/light-logo.svg" alt="logo"></a>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-xl-5">
                                 <nav class="rt-main-menu">
                                     <ul class="menu">
                                         <li class="menu-item menu-item-has-children">
@@ -111,18 +110,6 @@
                                                 <li class="menu-item"><a href="contact.html" class="child-menu">Contact Page</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item menu-item-has-children"> 
-                                            <a href="javascript:void(0)" class="menu-link">
-                                                Blog
-                                                <span class="shape">
-                                                    <i class="rt-icon icon-angle-down"></i>
-                                                </span>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item"><a href="blog-grid.html" class="child-menu"> Blog Grid</a></li>
-                                                <li class="menu-item"><a href="blog-details.html" class="child-menu">Blog Details</a></li>
-                                            </ul>
-                                        </li>
                                         <li class="menu-item menu-item-has-children">
                                             <a href="contact.html" class="menu-link">
                                                 Contact
@@ -131,23 +118,23 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-xl-3">
                                 <div class="header-action-items">
                                     <ul class="inline-list d-flex align-items-center">
                                         <li class="action-list rt-login-wrap d-xl-block d-none">
                                             <a href="index.html" class="log-area">
-                                              <i class="rt-icon icon-lock"></i> Login /Sign Up
+                                              <i class="rt-icon icon-lock"></i> Login
                                             </a>
                                         </li>
                                         <li class="action-list">
-                                            <div class="lawyer-button">
-                                                <a href="index.html" class="lawyer-btn">
+                                            <div class="equipment-button">
+                                                <a href="index.html" class="equipment-btn">
                                                     Add Listing
+                                                    <!-- <i class="rt-icon icon-plus-1"></i> -->
                                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M1 6H11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                                         <path d="M6 1L6 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                                     </svg>
-                                                    <i class="rt-icon icon-plus-1"></i>
                                                 </a>
                                             </div>
                                         </li>
@@ -219,10 +206,9 @@
                     </div>
                 </div>
             </div>
-            <!-- end mobile menu -->
 
             <main>
-                <div class="rt-breadcrumb-wrap overflow-hidden position-relative">
+                <div class="rt-breadcrumb-wrap position-relative">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
@@ -247,7 +233,7 @@
                             <div class="product-sorting d-flex align-items-center">
                                 <div class="ordering-controller">
                                     <form action="#" method="POST" class="rt-contact-form contact-form style-1" id="contact-form">
-                                        <div class="search-filter-form d-flex align-items-center" action="#">
+                                        <div class="search-filter-form2 d-flex align-items-center" action="#">
                                             <span class="text">Sort By: </span>
                                             <div class="form-group mb-0">
                                                 <select class="form-control rt-form-control rt-select" id="make">
@@ -292,15 +278,55 @@
                                             </h3>
                                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                    <div class="rt-sidebar sidebar-search">
-                                                        <form action="#" method="POST" class="rt-contact-form contact-form" id="contact-form">
-                                                            <div class="form-group">
-                                                                <input type="text" class="form-control rt-form-control" placeholder="Keywords">
-                                                                <button class="btn btn-outline-secondary"><i class="rt-icon icon-search"></i></button>
-                                                            </div>
+                                                    <div class="rt-sidebar sidebar-select">
+                                                        <form action="#" method="POST" class="rt-contact-form contact-form" id="contact-form-2">
                                                             <div class="form-group mb-0">
-                                                                <input type="text" class="form-control rt-form-control" placeholder="City or ZIP Code">
-                                                                <button class="btn btn-outline-secondary"><i class="rt-icon icon-map"></i></button>
+                                                                <select class="form-control rt-form-control rt-select" id="search">
+                                                                    <option>Search For</option>
+                                                                    <option>Excavator</option>
+                                                                    <option>Backhole Loader </option>
+                                                                    <option>Vibromax Roller</option>
+                                                                    <option>Skid Steer </option>
+                                                                </select>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="rt-sidebar sidebar-select">
+                                                        <form action="#" method="POST" class="rt-contact-form contact-form" id="contact-form-3">
+                                                            <div class="form-group mb-0">
+                                                                <select class="form-control rt-form-control rt-select" id="equipment">
+                                                                    <option>Equipment Type</option>
+                                                                    <option>Excavator</option>
+                                                                    <option>Backhole Loader </option>
+                                                                    <option>Vibromax Roller</option>
+                                                                    <option>Skid Steer</option>
+                                                                </select>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="rt-sidebar sidebar-select">
+                                                        <form action="#" method="POST" class="rt-contact-form contact-form" id="contact-form-4">
+                                                            <div class="form-group mb-0">
+                                                                <select class="form-control rt-form-control rt-select" id="oil">
+                                                                    <option>Oil Type</option>
+                                                                    <option>Synthetic oil</option>
+                                                                    <option>Synthetic blend oil </option>
+                                                                    <option>High mileage oil</option>
+                                                                    <option>Conventional oil </option>
+                                                                </select>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="rt-sidebar sidebar-select">
+                                                        <form action="#" method="POST" class="rt-contact-form contact-form" id="contact-form-5">
+                                                            <div class="form-group mb-0">
+                                                                <select class="form-control rt-form-control rt-select" id="location">
+                                                                    <option>Select Location</option>
+                                                                    <option>USA</option>
+                                                                    <option>England </option>
+                                                                    <option>Canada</option>
+                                                                    <option>Japan </option>
+                                                                </select>
                                                             </div>
                                                         </form>
                                                     </div>
@@ -333,25 +359,18 @@
                                         <div class="accordion-item">
                                             <h3 class="accordion-header" id="headingThree">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                                    Type of Service
+                                                    Price Range
                                                     <i class="rt-icon icon-angle-down accr-plus"></i>
                                                     <i class="rt-icon icon-arrow-up accr-minus"></i>
                                                 </button>
                                             </h3>
                                             <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                    <div class="rt-sidebar sidebar-select">
-                                                        <form action="#" method="POST" class="rt-contact-form contact-form" id="contact-form-2">
-                                                            <div class="form-group mb-0">
-                                                                <select class="form-control rt-form-control rt-select" id="service">
-                                                                    <option>Select Services</option>
-                                                                    <option>Doctor</option>
-                                                                    <option>Event </option>
-                                                                    <option>Restuarent</option>
-                                                                    <option>Shoping </option>
-                                                                </select>
-                                                            </div>
-                                                        </form>
+                                                    <div class="rt-sidebar sidebar-price">
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <input type="number" class="form-control" placeholder="From">
+                                                            <input type="number" class="form-control" placeholder="To">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -359,176 +378,29 @@
                                         <div class="accordion-item">
                                             <h3 class="accordion-header" id="headingFour">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                                    Select Gender
+                                                    Model Year
                                                     <i class="rt-icon icon-angle-down accr-plus"></i>
                                                     <i class="rt-icon icon-arrow-up accr-minus"></i>
                                                 </button>
                                             </h3>
                                             <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                    <div class="rt-sidebar sidebar-check">
-                                                        <ul class="rt-check-list style-1">
-                                                            <li>
-                                                                <input id="a1" class="checkbox-custom" name="a1" type="checkbox">
-                                                                <label for="a1" class="checkbox-custom-label">
-                                                                    <span class="check-mark"></span>
-                                                                    <span class="check-text">All</span>
-                                                                </label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a2" class="checkbox-custom" name="a2" type="checkbox">
-                                                                <label for="a2" class="checkbox-custom-label">
-                                                                    <span class="check-mark"></span>
-                                                                    <span class="check-text">Male</span>
-                                                                </label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a3" class="checkbox-custom" name="a3" type="checkbox">
-                                                                <label for="a3" class="checkbox-custom-label mb-0">
-                                                                    <span class="check-mark"></span>
-                                                                    <span class="check-text">Female </span>
-                                                                </label>
-                                                            </li>
-                                                        </ul>
+                                                    <div class="rt-sidebar sidebar-select">
+                                                        <form action="#" method="POST" class="rt-contact-form contact-form" id="contact-form-6">
+                                                            <div class="form-group mb-0">
+                                                                <select class="form-control rt-form-control rt-select" id="model">
+                                                                    <option>Select Year</option>
+                                                                    <option>2022</option>
+                                                                    <option>2020 </option>
+                                                                    <option>2018</option>
+                                                                    <option>2016 </option>
+                                                                </select>
+                                                            </div>
+                                                        </form>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h3 class="accordion-header" id="headingFive">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                                    Filter By Age
-                                                    <i class="rt-icon icon-angle-down accr-plus"></i>
-                                                    <i class="rt-icon icon-arrow-up accr-minus"></i>
-                                                </button>
-                                            </h3>
-                                            <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    <div class="rt-sidebar sidebar-check">
-                                                        <ul class="rt-check-list style-1">
-                                                            <li>
-                                                                <input id="a4" class="checkbox-custom" name="a4" type="checkbox">
-                                                                <label for="a4" class="checkbox-custom-label">
-                                                                    <span class="check-mark"></span>
-                                                                    <span class="check-text">15 - 22 Years</span>
-                                                                </label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a5" class="checkbox-custom" name="a5" type="checkbox">
-                                                                <label for="a5" class="checkbox-custom-label">
-                                                                    <span class="check-mark"></span>
-                                                                    <span class="check-text">22 - 36 Years</span>
-                                                                </label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a6" class="checkbox-custom" name="a6" type="checkbox">
-                                                                <label for="a6" class="checkbox-custom-label mb-0">
-                                                                    <span class="check-mark"></span>
-                                                                    <span class="check-text">36 - 50 Years </span>
-                                                                </label>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h3 class="accordion-header" id="headingSix">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                                                    Ratings
-                                                    <i class="rt-icon icon-angle-down accr-plus"></i>
-                                                    <i class="rt-icon icon-arrow-up accr-minus"></i>
-                                                </button>
-                                            </h3>
-                                            <div id="collapseSix" class="accordion-collapse collapse show" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    <div class="rt-sidebar sidebar-check sidebar-rating">
-                                                        <ul class="rt-check-list style-1">
-                                                            <li>
-                                                                <input id="a7" class="checkbox-custom" name="a7" type="checkbox">
-                                                                <label for="a7" class="checkbox-custom-label">
-                                                                    <span class="check-mark"></span>
-                                                                    <span class="check-text">
-                                                                        <ul class="d-flex review-listing">
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li class="number">(23)</li>
-                                                                        </ul>
-                                                                    </span>
-                                                                </label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a8" class="checkbox-custom" name="a8" type="checkbox">
-                                                                <label for="a8" class="checkbox-custom-label">
-                                                                    <span class="check-mark"></span>
-                                                                    <span class="check-text">
-                                                                        <ul class="d-flex review-listing">
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star color-transparent"></i></a></li>
-                                                                            <li class="number">(18)</li>
-                                                                        </ul>
-                                                                    </span>
-                                                                </label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a9" class="checkbox-custom" name="a9" type="checkbox">
-                                                                <label for="a9" class="checkbox-custom-label">
-                                                                    <span class="check-mark"></span>
-                                                                    <span class="check-text">
-                                                                        <ul class="d-flex review-listing">
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star color-transparent"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star color-transparent"></i></a></li>
-                                                                            <li class="number">(11)</li>
-                                                                        </ul>
-                                                                    </span>
-                                                                </label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a10" class="checkbox-custom" name="a10" type="checkbox">
-                                                                <label for="a10" class="checkbox-custom-label">
-                                                                    <span class="check-mark"></span>
-                                                                    <span class="check-text">
-                                                                        <ul class="d-flex review-listing">
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star color-transparent"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star color-transparent"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star color-transparent"></i></a></li>
-                                                                            <li class="number">(44)</li>
-                                                                        </ul>
-                                                                    </span>
-                                                                </label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a11" class="checkbox-custom" name="a11" type="checkbox">
-                                                                <label for="a11" class="checkbox-custom-label">
-                                                                    <span class="check-mark"></span>
-                                                                    <span class="check-text">
-                                                                        <ul class="d-flex review-listing">
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star color-transparent"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star color-transparent"></i></a></li>
-                                                                            <li><a href="index.html"><i class="rt-icon icon-star color-transparent"></i></a></li>
-                                                                            <li class="number">(07)</li>
-                                                                        </ul>
-                                                                    </span>
-                                                                </label>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="mt-4">
-                                                            <button type="submit" class="filter-btn">Apply Filters</button>
-                                                            <button type="submit" class="filter-btn reset-btn mb-0"><i class="rt-icon icon-compare"></i> Reset Filters</button>
-                                                        </div>
+                                                    <div class="mt-4">
+                                                        <button type="submit" class="filter-btn">Apply Filters</button>
+                                                        <button type="submit" class="filter-btn reset-btn mb-0"><i class="rt-icon icon-compare"></i> Reset Filters</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -541,101 +413,81 @@
                                     <div class="row justify-content-center">
                                         <div class="col-xl-4 col-md-6 mb-4">
                                             <div class="product-grid-view">
-                                                <div class="rt-listing-box style-3">
+                                                <div class="rt-listing-box">
                                                     <div class="image-box position-relative">
                                                         <div class="item-img overflow-hidden position-relative">
                                                             <a href="listing-details.html">
-                                                                <img src="media/listing/listing-1.jpg" width="258" height="210" alt="team">
+                                                                <img src="media/listing/listing-1.png" width="266" height="179" alt="listing">
                                                             </a>
                                                             <div class="favourite-button position-absolute">
                                                                 <a href="index.html" class="favourite-btn"><i class="rt-icon icon-wishlist"></i></a>
                                                             </div>
-                                                            <div class="trending-wrap2">
-                                                                <i class="rt-icon icon-flash"></i>
-                                                                <span class="text">Featured</span>
+                                                            <div class="rt-tag-list position-absolute">
+                                                                <ul>
+                                                                    <li>For Rent</li>
+                                                                    <li> <i class="rt-icon icon-flash"></i> Featured</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/handcuffs-sm.svg" alt="categories">
-                                                                Criminal
-                                                                <div class="shape position-absolute"></div>
-                                                            </a>
-                                                        </div>
+                                                        <div class="rt-price-tag position-absolute">$445/ <span>day</span></div>
                                                     </div>
                                                     <div class="content">
                                                         <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Floyd Miles</a></h3>
-                                                            <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                            <div class="phone"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
+                                                            <h3 class="title"><a href="listing-details.html">The Brand New 318G Skid 
+                                                                Steers Loader</a></h3>
+                                                            <div class="element-info map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                            <div class="element-info model"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                            <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="product-list-view">
-                                                <div class="rt-listing-box style-3 style-4 d-md-flex align-items-center">
-                                                    <div class="image-box position-relative">
-                                                        <div class="item-img overflow-hidden position-relative">
-                                                            <a href="listing-details.html">
-                                                                <img src="media/listing/listing-10.jpg" width="258" height="245" alt="team">
-                                                            </a>
-                                                            <div class="trending-wrap2">
-                                                                <i class="rt-icon icon-flash"></i>
-                                                                <span class="text">Featured</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/handcuffs-sm.svg" alt="categories">
-                                                                Criminal
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content position-relative">
-                                                        <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Mr.David Wailly</a></h3>
-                                                            <div class="designation"><i class="rt-icon icon-book"></i>LLB (UK), LLD (Canada)</div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
+                                                <div class="rt-listing-box style-2 style-4">
+                                                    <div class="d-flex gap-4">
+                                                        <div class="image-box position-relative">
+                                                            <div class="item-img overflow-hidden position-relative">
+                                                                <a href="listing-details.html">
+                                                                    <img src="media/listing/listing-5.png" width="220" height="221" alt="listing">
+                                                                </a>
+                                                                <div class="rt-tag-list position-absolute">
+                                                                    <ul>
+                                                                        <li>For Rent</li>
+                                                                        <li> <i class="rt-icon icon-flash"></i> Featured</li>
+                                                                    </ul>
                                                                 </div>
                                                             </div>
-                                                            <p>
-                                                                disialwe pride oursdisialwe pride ourselves on delivering toer are
-                                                                legal services with a commitment integrity.
-                                                            </p>
-                                                            <div class="contact d-flex flex-wrap">
-                                                                <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                                <div class="phone mb-0"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            </div>
+                                                        </div>
+                                                        <div class="content position-relative">
                                                             <div class="rt-social-box">
-                                                                <ul class="d-flex align-items-center">
+                                                                <ul>
                                                                     <li>
                                                                         <a href="index.html" target="_blank"><i class="rt-icon icon-wishlist"></i></a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-compare"></i></a>
+                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-reload"></i></a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-global"></i></a>
+                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-quick-view"></i></a>
                                                                     </li>
                                                                     <li>
                                                                         <a href="index.html" target="_blank"><i class="rt-icon icon-e-mail"></i></a>
                                                                     </li>
                                                                 </ul>
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <h3 class="title"><a href="listing-details.html">Vibromax Single Drum Rollers 
+                                                                    From JCB Americas</a>
+                                                                </h3>
+                                                                <div class="rt-price-tag mb-4">$445/ <span>day</span></div>
+                                                                <div class="d-flex gap-3 element-info-wrap mb-3">
+                                                                    <div class="element-info map mb-0"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                                    <div class="element-info phone"><i class="rt-icon icon-phone"></i>+123 980 679</div>
+                                                                </div>
+                                                                <div class="d-flex gap-3 element-info-wrap">
+                                                                    <div class="element-info model mb-0"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                                    <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -644,93 +496,79 @@
                                         </div>
                                         <div class="col-xl-4 col-md-6 mb-4">
                                             <div class="product-grid-view">
-                                                <div class="rt-listing-box style-3">
+                                                <div class="rt-listing-box">
                                                     <div class="image-box position-relative">
                                                         <div class="item-img overflow-hidden position-relative">
                                                             <a href="listing-details.html">
-                                                                <img src="media/listing/listing-2.jpg" width="258" height="210" alt="team">
+                                                                <img src="media/listing/listing-2.png" width="266" height="179" alt="listing">
                                                             </a>
                                                             <div class="favourite-button position-absolute">
                                                                 <a href="index.html" class="favourite-btn"><i class="rt-icon icon-wishlist"></i></a>
                                                             </div>
+                                                            <div class="rt-tag-list position-absolute">
+                                                                <ul>
+                                                                    <li>For Buy</li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/building-sm.svg" alt="categories">
-                                                                Real Estate
-                                                                <div class="shape position-absolute"></div>
-                                                            </a>
-                                                        </div>
+                                                        <div class="rt-price-tag position-absolute">$9,000</div>
                                                     </div>
                                                     <div class="content">
                                                         <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Courtney Henry</a></h3>
-                                                            <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                            <div class="phone"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
+                                                            <h3 class="title"><a href="listing-details.html">Excavator digginge in they 
+                                                                ground on day light</a></h3>
+                                                            <div class="element-info map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                            <div class="element-info model"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                            <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="product-list-view">
-                                                <div class="rt-listing-box style-3 style-4 d-md-flex align-items-center">
-                                                    <div class="image-box position-relative">
-                                                        <div class="item-img overflow-hidden position-relative">
-                                                            <a href="listing-details.html">
-                                                                <img src="media/listing/listing-11.jpg" width="258" height="245" alt="team">
-                                                            </a>
-                                                        </div>
-                                                        <div class="rt-tag-list style-2 position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/handcuffs-sm.svg" alt="categories">
-                                                                Criminal
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content position-relative">
-                                                        <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Courtney Henry</a></h3>
-                                                            <div class="designation"><i class="rt-icon icon-book"></i>LLB (UK), LLD (Canada)</div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
+                                                <div class="rt-listing-box style-2 style-4">
+                                                    <div class="d-flex gap-4">
+                                                        <div class="image-box position-relative">
+                                                            <div class="item-img overflow-hidden position-relative">
+                                                                <a href="listing-details.html">
+                                                                    <img src="media/listing/listing-6.png" width="220" height="221" alt="listing">
+                                                                </a>
+                                                                <div class="rt-tag-list position-absolute">
+                                                                    <ul>
+                                                                        <li>For Sell</li>
+                                                                    </ul>
                                                                 </div>
                                                             </div>
-                                                            <p>
-                                                                disialwe pride oursdisialwe pride ourselves on delivering toer are
-                                                                legal services with a commitment integrity.
-                                                            </p>
-                                                            <div class="contact d-flex flex-wrap">
-                                                                <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                                <div class="phone mb-0"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            </div>
+                                                        </div>
+                                                        <div class="content position-relative">
                                                             <div class="rt-social-box">
-                                                                <ul class="d-flex align-items-center">
+                                                                <ul>
                                                                     <li>
                                                                         <a href="index.html" target="_blank"><i class="rt-icon icon-wishlist"></i></a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-compare"></i></a>
+                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-reload"></i></a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-global"></i></a>
+                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-quick-view"></i></a>
                                                                     </li>
                                                                     <li>
                                                                         <a href="index.html" target="_blank"><i class="rt-icon icon-e-mail"></i></a>
                                                                     </li>
                                                                 </ul>
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <h3 class="title"><a href="listing-details.html">Vibromax Single Drum Rollers 
+                                                                    From JCB Americas</a>
+                                                                </h3>
+                                                                <div class="rt-price-tag mb-4">$13,000</div>
+                                                                <div class="d-flex gap-3 element-info-wrap mb-3">
+                                                                    <div class="element-info map mb-0"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                                    <div class="element-info phone"><i class="rt-icon icon-phone"></i>+123 980 679</div>
+                                                                </div>
+                                                                <div class="d-flex gap-3 element-info-wrap">
+                                                                    <div class="element-info model mb-0"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                                    <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -739,101 +577,79 @@
                                         </div>
                                         <div class="col-xl-4 col-md-6 mb-4">
                                             <div class="product-grid-view">
-                                                <div class="rt-listing-box style-3">
+                                                <div class="rt-listing-box">
                                                     <div class="image-box position-relative">
                                                         <div class="item-img overflow-hidden position-relative">
                                                             <a href="listing-details.html">
-                                                                <img src="media/listing/listing-3.jpg" width="258" height="210" alt="team">
+                                                                <img src="media/listing/listing-3.png" width="266" height="179" alt="listing">
                                                             </a>
                                                             <div class="favourite-button position-absolute">
                                                                 <a href="index.html" class="favourite-btn"><i class="rt-icon icon-wishlist"></i></a>
                                                             </div>
-                                                            <div class="trending-wrap2">
-                                                                <i class="rt-icon icon-flash"></i>
-                                                                <span class="text">Featured</span>
+                                                            <div class="rt-tag-list position-absolute">
+                                                                <ul>
+                                                                    <li>For Rent</li>
+                                                                    <li> <i class="rt-icon icon-flash"></i> Featured</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/banking-sm.svg" alt="categories">
-                                                                Banking
-                                                                <div class="shape position-absolute"></div>
-                                                            </a>
-                                                        </div>
+                                                        <div class="rt-price-tag position-absolute">$656/ <span>day</span></div>
                                                     </div>
                                                     <div class="content">
                                                         <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Wade Warren</a></h3>
-                                                            <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                            <div class="phone"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
+                                                            <h3 class="title"><a href="listing-details.html">Excavator digginge in they 
+                                                                ground on day light</a></h3>
+                                                            <div class="element-info map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                            <div class="element-info model"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                            <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="product-list-view">
-                                                <div class="rt-listing-box style-3 style-4 d-md-flex align-items-center">
-                                                    <div class="image-box position-relative">
-                                                        <div class="item-img overflow-hidden position-relative">
-                                                            <a href="listing-details.html">
-                                                                <img src="media/listing/listing-12.jpg" width="258" height="245" alt="team">
-                                                            </a>
-                                                            <div class="trending-wrap2">
-                                                                <i class="rt-icon icon-flash"></i>
-                                                                <span class="text">Featured</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/handcuffs-sm.svg" alt="categories">
-                                                                Criminal
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content position-relative">
-                                                        <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Ronald Richards</a></h3>
-                                                            <div class="designation"><i class="rt-icon icon-book"></i>LLB (UK), LLD (Canada)</div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
+                                                <div class="rt-listing-box style-2 style-4">
+                                                    <div class="d-flex gap-4">
+                                                        <div class="image-box position-relative">
+                                                            <div class="item-img overflow-hidden position-relative">
+                                                                <a href="listing-details.html">
+                                                                    <img src="media/listing/listing-7.png" width="220" height="221" alt="listing">
+                                                                </a>
+                                                                <div class="rt-tag-list position-absolute">
+                                                                    <ul>
+                                                                        <li>For Buy</li>
+                                                                    </ul>
                                                                 </div>
                                                             </div>
-                                                            <p>
-                                                                disialwe pride oursdisialwe pride ourselves on delivering toer are
-                                                                legal services with a commitment integrity.
-                                                            </p>
-                                                            <div class="contact d-flex flex-wrap">
-                                                                <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                                <div class="phone mb-0"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            </div>
+                                                        </div>
+                                                        <div class="content position-relative">
                                                             <div class="rt-social-box">
-                                                                <ul class="d-flex align-items-center">
+                                                                <ul>
                                                                     <li>
                                                                         <a href="index.html" target="_blank"><i class="rt-icon icon-wishlist"></i></a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-compare"></i></a>
+                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-reload"></i></a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-global"></i></a>
+                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-quick-view"></i></a>
                                                                     </li>
                                                                     <li>
                                                                         <a href="index.html" target="_blank"><i class="rt-icon icon-e-mail"></i></a>
                                                                     </li>
                                                                 </ul>
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <h3 class="title"><a href="listing-details.html">The Brand New 318G Skid Steers Loader</a>
+                                                                </h3>
+                                                                <div class="rt-price-tag mb-4">$18,000</div>
+                                                                <div class="d-flex gap-3 element-info-wrap mb-3">
+                                                                    <div class="element-info map mb-0"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                                    <div class="element-info phone"><i class="rt-icon icon-phone"></i>+123 980 679</div>
+                                                                </div>
+                                                                <div class="d-flex gap-3 element-info-wrap">
+                                                                    <div class="element-info model mb-0"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                                    <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -842,93 +658,79 @@
                                         </div>
                                         <div class="col-xl-4 col-md-6 mb-4">
                                             <div class="product-grid-view">
-                                                <div class="rt-listing-box style-3">
+                                                <div class="rt-listing-box">
                                                     <div class="image-box position-relative">
                                                         <div class="item-img overflow-hidden position-relative">
                                                             <a href="listing-details.html">
-                                                                <img src="media/listing/listing-4.jpg" width="258" height="210" alt="team">
+                                                                <img src="media/listing/listing-4.png" width="266" height="179" alt="listing">
                                                             </a>
                                                             <div class="favourite-button position-absolute">
                                                                 <a href="index.html" class="favourite-btn"><i class="rt-icon icon-wishlist"></i></a>
                                                             </div>
+                                                            <div class="rt-tag-list position-absolute">
+                                                                <ul>
+                                                                    <li>For Sell</li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/business-sm.svg" alt="categories">
-                                                                Business
-                                                                <div class="shape position-absolute"></div>
-                                                            </a>
-                                                        </div>
+                                                        <div class="rt-price-tag position-absolute">$19,000</div>
                                                     </div>
                                                     <div class="content">
                                                         <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Ronald Richards</a></h3>
-                                                            <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                            <div class="phone"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
+                                                            <h3 class="title"><a href="listing-details.html">Excavator digginge in they 
+                                                                ground on day light</a></h3>
+                                                            <div class="element-info map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                            <div class="element-info model"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                            <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="product-list-view">
-                                                <div class="rt-listing-box style-3 style-4 d-md-flex align-items-center">
-                                                    <div class="image-box position-relative">
-                                                        <div class="item-img overflow-hidden position-relative">
-                                                            <a href="listing-details.html">
-                                                                <img src="media/listing/listing-13.jpg" width="258" height="245" alt="team">
-                                                            </a>
-                                                        </div>
-                                                        <div class="rt-tag-list style-2 position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/handcuffs-sm.svg" alt="categories">
-                                                                Criminal
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content position-relative">
-                                                        <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Wade Warren</a></h3>
-                                                            <div class="designation"><i class="rt-icon icon-book"></i>LLB (UK), LLD (Canada)</div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
+                                                <div class="rt-listing-box style-2 style-4">
+                                                    <div class="d-flex gap-4">
+                                                        <div class="image-box position-relative">
+                                                            <div class="item-img overflow-hidden position-relative">
+                                                                <a href="listing-details.html">
+                                                                    <img src="media/listing/listing-8.png" width="220" height="221" alt="listing">
+                                                                </a>
+                                                                <div class="rt-tag-list position-absolute">
+                                                                    <ul>
+                                                                        <li>For Rent</li>
+                                                                        <li> <i class="rt-icon icon-flash"></i> Featured</li>
+                                                                    </ul>
                                                                 </div>
                                                             </div>
-                                                            <p>
-                                                                disialwe pride oursdisialwe pride ourselves on delivering toer are
-                                                                legal services with a commitment integrity.
-                                                            </p>
-                                                            <div class="contact d-flex flex-wrap">
-                                                                <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                                <div class="phone mb-0"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            </div>
+                                                        </div>
+                                                        <div class="content position-relative">
                                                             <div class="rt-social-box">
-                                                                <ul class="d-flex align-items-center">
+                                                                <ul>
                                                                     <li>
                                                                         <a href="index.html" target="_blank"><i class="rt-icon icon-wishlist"></i></a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-compare"></i></a>
+                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-reload"></i></a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-global"></i></a>
+                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-quick-view"></i></a>
                                                                     </li>
                                                                     <li>
                                                                         <a href="index.html" target="_blank"><i class="rt-icon icon-e-mail"></i></a>
                                                                     </li>
                                                                 </ul>
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <h3 class="title"><a href="listing-details.html">67 EX Excavator for heavy Construction Workplace</a>
+                                                                </h3>
+                                                                <div class="rt-price-tag mb-4">$380/ <span>day</span></div>
+                                                                <div class="d-flex gap-3 element-info-wrap mb-3">
+                                                                    <div class="element-info map mb-0"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                                    <div class="element-info phone"><i class="rt-icon icon-phone"></i>+123 980 679</div>
+                                                                </div>
+                                                                <div class="d-flex gap-3 element-info-wrap">
+                                                                    <div class="element-info model mb-0"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                                    <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -937,93 +739,80 @@
                                         </div>
                                         <div class="col-xl-4 col-md-6 mb-4">
                                             <div class="product-grid-view">
-                                                <div class="rt-listing-box style-3">
+                                                <div class="rt-listing-box">
                                                     <div class="image-box position-relative">
                                                         <div class="item-img overflow-hidden position-relative">
                                                             <a href="listing-details.html">
-                                                                <img src="media/listing/listing-6.jpg" width="258" height="210" alt="team">
+                                                                <img src="media/listing/listing-9.png" width="266" height="179" alt="listing">
                                                             </a>
                                                             <div class="favourite-button position-absolute">
                                                                 <a href="index.html" class="favourite-btn"><i class="rt-icon icon-wishlist"></i></a>
                                                             </div>
+                                                            <div class="rt-tag-list position-absolute">
+                                                                <ul>
+                                                                    <li>For Rent</li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/injured-sm.svg" alt="categories">
-                                                                Injured
-                                                                <div class="shape position-absolute"></div>
-                                                            </a>
-                                                        </div>
+                                                        <div class="rt-price-tag position-absolute">$620/ <span>day</span></div>
                                                     </div>
                                                     <div class="content">
                                                         <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Jenny Wilson</a></h3>
-                                                            <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                            <div class="phone"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
+                                                            <h3 class="title"><a href="listing-details.html">Mini excavators smaller 
+                                                                than standard excavators</a></h3>
+                                                            <div class="element-info map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                            <div class="element-info model"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                            <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="product-list-view">
-                                                <div class="rt-listing-box style-3 style-4 d-md-flex align-items-center">
-                                                    <div class="image-box position-relative">
-                                                        <div class="item-img overflow-hidden position-relative">
-                                                            <a href="listing-details.html">
-                                                                <img src="media/listing/listing-14.jpg" width="258" height="245" alt="team">
-                                                            </a>
-                                                        </div>
-                                                        <div class="rt-tag-list style-2 position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/handcuffs-sm.svg" alt="categories">
-                                                                Criminal
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content position-relative">
-                                                        <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Cameron Williamson</a></h3>
-                                                            <div class="designation"><i class="rt-icon icon-book"></i>LLB (UK), LLD (Canada)</div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
+                                                <div class="rt-listing-box style-2 style-4">
+                                                    <div class="d-flex gap-4">
+                                                        <div class="image-box position-relative">
+                                                            <div class="item-img overflow-hidden position-relative">
+                                                                <a href="listing-details.html">
+                                                                    <img src="media/listing/listing-14.png" width="220" height="221" alt="listing">
+                                                                </a>
+                                                                <div class="rt-tag-list position-absolute">
+                                                                    <ul>
+                                                                        <li>For Sell</li>
+                                                                        <li> <i class="rt-icon icon-flash"></i> Featured</li>
+                                                                    </ul>
                                                                 </div>
                                                             </div>
-                                                            <p>
-                                                                disialwe pride oursdisialwe pride ourselves on delivering toer are
-                                                                legal services with a commitment integrity.
-                                                            </p>
-                                                            <div class="contact d-flex flex-wrap">
-                                                                <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                                <div class="phone mb-0"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            </div>
+                                                        </div>
+                                                        <div class="content position-relative">
                                                             <div class="rt-social-box">
-                                                                <ul class="d-flex align-items-center">
+                                                                <ul>
                                                                     <li>
                                                                         <a href="index.html" target="_blank"><i class="rt-icon icon-wishlist"></i></a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-compare"></i></a>
+                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-reload"></i></a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-global"></i></a>
+                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-quick-view"></i></a>
                                                                     </li>
                                                                     <li>
                                                                         <a href="index.html" target="_blank"><i class="rt-icon icon-e-mail"></i></a>
                                                                     </li>
                                                                 </ul>
+                                                            </div>
+                                                            <div class="info-box">
+                                                                <h3 class="title"><a href="listing-details.html">Vibromax Single Drum Rollers 
+                                                                    From JCB Americas</a>
+                                                                </h3>
+                                                                <div class="rt-price-tag mb-4">$9,000</div>
+                                                                <div class="d-flex gap-3 element-info-wrap mb-3">
+                                                                    <div class="element-info map mb-0"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                                    <div class="element-info phone"><i class="rt-icon icon-phone"></i>+123 980 679</div>
+                                                                </div>
+                                                                <div class="d-flex gap-3 element-info-wrap">
+                                                                    <div class="element-info model mb-0"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                                    <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1032,102 +821,30 @@
                                         </div>
                                         <div class="col-xl-4 col-md-6 mb-4">
                                             <div class="product-grid-view">
-                                                <div class="rt-listing-box style-3">
+                                                <div class="rt-listing-box">
                                                     <div class="image-box position-relative">
                                                         <div class="item-img overflow-hidden position-relative">
                                                             <a href="listing-details.html">
-                                                                <img src="media/listing/listing-7.jpg" width="258" height="210" alt="team">
+                                                                <img src="media/listing/listing-10.png" width="266" height="179" alt="listing">
                                                             </a>
                                                             <div class="favourite-button position-absolute">
                                                                 <a href="index.html" class="favourite-btn"><i class="rt-icon icon-wishlist"></i></a>
                                                             </div>
-                                                            <div class="trending-wrap2">
-                                                                <i class="rt-icon icon-flash"></i>
-                                                                <span class="text">Featured</span>
+                                                            <div class="rt-tag-list position-absolute">
+                                                                <ul>
+                                                                    <li>For Sell</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/tax-sm.svg" alt="categories">
-                                                                Tax
-                                                                <div class="shape position-absolute"></div>
-                                                            </a>
-                                                        </div>
+                                                        <div class="rt-price-tag position-absolute">$19,000</div>
                                                     </div>
                                                     <div class="content">
                                                         <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Kathryn Murphy</a></h3>
-                                                            <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                            <div class="phone"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-list-view">
-                                                <div class="rt-listing-box style-3 style-4 d-md-flex align-items-center">
-                                                    <div class="image-box position-relative">
-                                                        <div class="item-img overflow-hidden position-relative">
-                                                            <a href="listing-details.html">
-                                                                <img src="media/listing/listing-10.jpg" width="258" height="245" alt="team">
-                                                            </a>
-                                                            <div class="trending-wrap2">
-                                                                <i class="rt-icon icon-flash"></i>
-                                                                <span class="text">Featured</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/handcuffs-sm.svg" alt="categories">
-                                                                Criminal
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content position-relative">
-                                                        <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Mr.David Wailly</a></h3>
-                                                            <div class="designation"><i class="rt-icon icon-book"></i>LLB (UK), LLD (Canada)</div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
-                                                            <p>
-                                                                disialwe pride oursdisialwe pride ourselves on delivering toer are
-                                                                legal services with a commitment integrity.
-                                                            </p>
-                                                            <div class="contact d-flex flex-wrap">
-                                                                <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                                <div class="phone mb-0"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            </div>
-                                                            <div class="rt-social-box">
-                                                                <ul class="d-flex align-items-center">
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-wishlist"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-compare"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-global"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-e-mail"></i></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                                            <h3 class="title"><a href="listing-details.html">Excavator digginge in they 
+                                                                ground on day light</a></h3>
+                                                            <div class="element-info map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                            <div class="element-info model"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                            <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1135,94 +852,30 @@
                                         </div>
                                         <div class="col-xl-4 col-md-6 mb-4">
                                             <div class="product-grid-view">
-                                                <div class="rt-listing-box style-3">
+                                                <div class="rt-listing-box">
                                                     <div class="image-box position-relative">
                                                         <div class="item-img overflow-hidden position-relative">
                                                             <a href="listing-details.html">
-                                                                <img src="media/listing/listing-5.jpg" width="258" height="210" alt="team">
+                                                                <img src="media/listing/listing-11.png" width="266" height="179" alt="listing">
                                                             </a>
                                                             <div class="favourite-button position-absolute">
                                                                 <a href="index.html" class="favourite-btn"><i class="rt-icon icon-wishlist"></i></a>
                                                             </div>
+                                                            <div class="rt-tag-list position-absolute">
+                                                                <ul>
+                                                                    <li>For Sell</li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/tax-sm.svg" alt="categories">
-                                                                Tax
-                                                                <div class="shape position-absolute"></div>
-                                                            </a>
-                                                        </div>
+                                                        <div class="rt-price-tag position-absolute">$19,000</div>
                                                     </div>
                                                     <div class="content">
                                                         <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Cameron Williamson</a></h3>
-                                                            <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                            <div class="phone"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-list-view">
-                                                <div class="rt-listing-box style-3 style-4 d-md-flex align-items-center">
-                                                    <div class="image-box position-relative">
-                                                        <div class="item-img overflow-hidden position-relative">
-                                                            <a href="listing-details.html">
-                                                                <img src="media/listing/listing-11.jpg" width="258" height="245" alt="team">
-                                                            </a>
-                                                        </div>
-                                                        <div class="rt-tag-list style-2 position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/handcuffs-sm.svg" alt="categories">
-                                                                Criminal
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content position-relative">
-                                                        <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Courtney Henry</a></h3>
-                                                            <div class="designation"><i class="rt-icon icon-book"></i>LLB (UK), LLD (Canada)</div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
-                                                            <p>
-                                                                disialwe pride oursdisialwe pride ourselves on delivering toer are
-                                                                legal services with a commitment integrity.
-                                                            </p>
-                                                            <div class="contact d-flex flex-wrap">
-                                                                <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                                <div class="phone mb-0"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            </div>
-                                                            <div class="rt-social-box">
-                                                                <ul class="d-flex align-items-center">
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-wishlist"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-compare"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-global"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-e-mail"></i></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                                            <h3 class="title"><a href="listing-details.html">heavy-duty dump truck 
+                                                                for transportation of soil</a></h3>
+                                                            <div class="element-info map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                            <div class="element-info model"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                            <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1230,98 +883,30 @@
                                         </div>
                                         <div class="col-xl-4 col-md-6 mb-4">
                                             <div class="product-grid-view">
-                                                <div class="rt-listing-box style-3">
+                                                <div class="rt-listing-box">
                                                     <div class="image-box position-relative">
                                                         <div class="item-img overflow-hidden position-relative">
                                                             <a href="listing-details.html">
-                                                                <img src="media/listing/listing-8.jpg" width="258" height="210" alt="team">
+                                                                <img src="media/listing/listing-12.png" width="266" height="179" alt="listing">
                                                             </a>
                                                             <div class="favourite-button position-absolute">
                                                                 <a href="index.html" class="favourite-btn"><i class="rt-icon icon-wishlist"></i></a>
                                                             </div>
+                                                            <div class="rt-tag-list position-absolute">
+                                                                <ul>
+                                                                    <li>For Sell</li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/banking-sm.svg" alt="categories">
-                                                                Banking
-                                                                <div class="shape position-absolute"></div>
-                                                            </a>
-                                                        </div>
+                                                        <div class="rt-price-tag position-absolute">$19,000</div>
                                                     </div>
                                                     <div class="content">
                                                         <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Robert Fox</a></h3>
-                                                            <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                            <div class="phone"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-list-view">
-                                                <div class="rt-listing-box style-3 style-4 d-md-flex align-items-center">
-                                                    <div class="image-box position-relative">
-                                                        <div class="item-img overflow-hidden position-relative">
-                                                            <a href="listing-details.html">
-                                                                <img src="media/listing/listing-12.jpg" width="258" height="245" alt="team">
-                                                            </a>
-                                                            <div class="trending-wrap2">
-                                                                <i class="rt-icon icon-flash"></i>
-                                                                <span class="text">Featured</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/handcuffs-sm.svg" alt="categories">
-                                                                Criminal
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content position-relative">
-                                                        <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Ronald Richards</a></h3>
-                                                            <div class="designation"><i class="rt-icon icon-book"></i>LLB (UK), LLD (Canada)</div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
-                                                            <p>
-                                                                disialwe pride oursdisialwe pride ourselves on delivering toer are
-                                                                legal services with a commitment integrity.
-                                                            </p>
-                                                            <div class="contact d-flex flex-wrap">
-                                                                <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                                <div class="phone mb-0"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            </div>
-                                                            <div class="rt-social-box">
-                                                                <ul class="d-flex align-items-center">
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-wishlist"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-compare"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-global"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-e-mail"></i></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                                            <h3 class="title"><a href="listing-details.html">DYNAPAC CC7200 Double
+                                                                Drum Vibratory Rollers</a></h3>
+                                                            <div class="element-info map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                            <div class="element-info model"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                            <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1329,98 +914,31 @@
                                         </div>
                                         <div class="col-xl-4 col-md-6 mb-4">
                                             <div class="product-grid-view">
-                                                <div class="rt-listing-box style-3">
+                                                <div class="rt-listing-box">
                                                     <div class="image-box position-relative">
                                                         <div class="item-img overflow-hidden position-relative">
                                                             <a href="listing-details.html">
-                                                                <img src="media/listing/listing-9.jpg" width="258" height="210" alt="team">
+                                                                <img src="media/listing/listing-13.png" width="266" height="179" alt="listing">
                                                             </a>
                                                             <div class="favourite-button position-absolute">
                                                                 <a href="index.html" class="favourite-btn"><i class="rt-icon icon-wishlist"></i></a>
                                                             </div>
-                                                            <div class="trending-wrap2">
-                                                                <i class="rt-icon icon-flash"></i>
-                                                                <span class="text">Featured</span>
+                                                            <div class="rt-tag-list position-absolute">
+                                                                <ul>
+                                                                    <li>For Rent</li>
+                                                                    <li> <i class="rt-icon icon-flash"></i> Featured</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
-                                                        <div class="rt-tag-list position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/handcuffs-1.svg" alt="categories">
-                                                                Criminal
-                                                                <div class="shape position-absolute"></div>
-                                                            </a>
-                                                        </div>
+                                                        <div class="rt-price-tag position-absolute">$320/ <span>day</span></div>
                                                     </div>
                                                     <div class="content">
                                                         <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Savannah Nguyen</a></h3>
-                                                            <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                            <div class="phone"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="product-list-view">
-                                                <div class="rt-listing-box style-3 style-4 d-md-flex align-items-center">
-                                                    <div class="image-box position-relative">
-                                                        <div class="item-img overflow-hidden position-relative">
-                                                            <a href="listing-details.html">
-                                                                <img src="media/listing/listing-13.jpg" width="258" height="245" alt="team">
-                                                            </a>
-                                                        </div>
-                                                        <div class="rt-tag-list style-2 position-absolute">
-                                                            <a href="team.html">
-                                                                <img src="media/categories/handcuffs-sm.svg" alt="categories">
-                                                                Criminal
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="content position-relative">
-                                                        <div class="info-box">
-                                                            <h3 class="title"><a href="listing-details.html">Wade Warren</a></h3>
-                                                            <div class="designation"><i class="rt-icon icon-book"></i>LLB (UK), LLD (Canada)</div>
-                                                            <div class="inner-review">
-                                                                <div class="d-flex align-items-center">
-                                                                    <div class="shape position-relative">
-                                                                        <i class="rt-icon icon-star"></i> 4.8
-                                                                        <div class="element-shape"></div>
-                                                                    </div>
-                                                                    <div class="text">1,997 reviews</div>
-                                                                </div>
-                                                            </div>
-                                                            <p>
-                                                                disialwe pride oursdisialwe pride ourselves on delivering toer are
-                                                                legal services with a commitment integrity.
-                                                            </p>
-                                                            <div class="contact d-flex flex-wrap">
-                                                                <div class="map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
-                                                                <div class="phone mb-0"><a href="tel:123980679"><i class="rt-icon icon-phone"></i>+123 980 679</a></div>
-                                                            </div>
-                                                            <div class="rt-social-box">
-                                                                <ul class="d-flex align-items-center">
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-wishlist"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-compare"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-global"></i></a>
-                                                                    </li>
-                                                                    <li>
-                                                                        <a href="index.html" target="_blank"><i class="rt-icon icon-e-mail"></i></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                                            <h3 class="title"><a href="listing-details.html">The Brand New 318G Skid 
+                                                                Steers Loader</a></h3>
+                                                            <div class="element-info map"><i class="rt-icon icon-map"></i>51 Street, United states</div>
+                                                            <div class="element-info model"><i class="rt-icon icon-calendar"></i>2023 Model</div>
+                                                            <div class="element-info condition"><i class="rt-icon icon-tags"></i>New Condition</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1458,12 +976,11 @@
             <!-- Start Footer -->
             <footer id="footer">
                 <div class="footer-1 position-relative overflow-hidden">
-                    <div class="rt-shape position-absolute d-xl-block d-none"><img class="wow animate__slideInRight" src="media/element/footer-1.png" alt="footer-shape"></div>
                     <div class="footer-top">
                         <div class="container">
-                           <div class="row justify-content-center">
-                            <div class="col-xl-3 col-lg-4 col-sm-6 mb-4 mb-xl-0">
-                                <div class="footer-contact">
+                           <div class="row justify-content-between">
+                            <div class="col-xl-4 col-lg-4 col-sm-6 mb-4 mb-xl-0">
+                                <div class="footer-contact mb-2">
                                     <a href="index.html" class="logo mb-4">
                                         <img src="media/logo/light-logo.svg" alt="logo">
                                     </a>
@@ -1472,8 +989,13 @@
                                     <div class="rt-contact phone"><a href="tel:1235590067990">123(55) 90067990</a></div>
                                     <div class="rt-contact mail"><a href="mailto:info@gmail.com">info@gmail.com</a></div>
                                 </div>
+                                <p class="footer-bottom-text mb-0">
+                                    Copyright
+                                    <span id="currentYear">© 2024</span>
+                                    <a href="https://www.radiustheme.com/" rel="nofollow">clequipment.com</a>
+                                </p>
                             </div>
-                            <div class="col-xl-3 col-lg-4 col-sm-6 mb-4 mb-xl-0">
+                            <div class="col-xl-2 col-lg-4 col-sm-6 mb-4 mb-xl-0">
                                 <h3 class="footer-widget-title">Company</h3>
                                 <div class="footer-link">
                                     <ul>
@@ -1500,63 +1022,66 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-4 col-sm-6 mb-4 mb-xl-0">
+                            <div class="col-xl-2 col-lg-4 col-sm-6 mb-4 mb-xl-0">
                                 <h3 class="footer-widget-title">Discover</h3>
                                 <div class="footer-link">
                                     <ul>
                                         <li>
                                             <a href="index.html" class="link">
-                                                Rent house
+                                                New Equipment
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.html" class="link">
-                                                Sell Properties
+                                                Used Equipment
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.html" class="link">
-                                                Modern Villa
+                                                Rental
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.html" class="link">
-                                                Corporate Building
+                                                Parts & Service
                                             </a>
                                         </li>
                                         <li>
                                             <a href="index.html" class="link">
-                                                Sea Beach
+                                                Manufacturers
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-4 col-sm-6 mb-4 mb-xl-0">
-                                <h3 class="footer-widget-title">E-mail Subscriptions</h3>
-                                <div class="footer-input">
-                                    <p>We don't send spam so don't worry.</p>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="E-mail Address">
-                                        <button class="btn btn-outline-secondary">Subscribe Now</button>
-                                    </div>
+                            <div class="col-xl-2 col-lg-4 col-sm-6 mb-4 mb-xl-0">
+                                <h3 class="footer-widget-title">Follow Us On</h3>
+                                <div class="footer-link">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.facebook.com/" class="link" target="_blank">
+                                                Facebook
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://x.com/" class="link" target="_blank">
+                                                Twitter
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/" class="link" target="_blank">
+                                                Instagram
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.pinterest.com/" class="link" target="_blank">
+                                                Pinterest
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-sm-12">
-                                    <p class="footer-bottom-text mb-0 text-center">
-                                        Copyright
-                                        <span id="currentYear">© 2024</span>
-                                        <a href="https://www.radiustheme.com/" rel="nofollow">clawyer.com</a>
-                                        All rights reserved.
-                                    </p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

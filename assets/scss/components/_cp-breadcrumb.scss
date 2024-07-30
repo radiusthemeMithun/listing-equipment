@@ -48,11 +48,11 @@
             color: $color-font;
             font-family: $font-title;
             &:hover {
-                color: $color-secondary;
+                color: $color-primary;
             }
         }
         &.active {
-            color: $color-secondary;
+            color: $color-primary;
         }
     }
 }

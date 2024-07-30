@@ -3,57 +3,7 @@
     border-radius: $border-radius-md;
     padding: 30px;
 }
-.contact-form {
-    .form-group {
-        position: relative;
-        margin-bottom: 10px;
-        .rt-form-control {
-            height: 40px;
-            border: 1px solid #E0E3E7;
-            font-family: $font-title;
-            font-size: 14px;
-            color: $color-primary;
-            &:focus {
-                outline: 0;
-                box-shadow: none;
-                border-color: $color-primary;
-            }
-            &::placeholder {
-                color: #999999;
-            }
-        }
-        .btn-outline-secondary {
-            border: 0;
-            border-radius: 0;
-            position: absolute;
-            top: 50%;
-            right: 10px;
-            transform: translateY(-50%);
-            height: auto;
-            width: auto;
-            padding: 0;
-            i {
-                &::before {
-                    font-size: 18px;
-                    font-weight: $font-medium;
-                    color: $color-body;
-                }
-            }
-            &:hover {
-                background-color: transparent;
-                color: $color-secondary;
-            }
-            &:focus {
-                outline: 0;
-                box-shadow: none;
-            }
-            &:focus {
-                outline: 0;
-                box-shadow: none;
-            }
-        }
-    }
-}
+
 .rt-distance-filter-area {
     .noUi-target {
         border-radius: 50px;
@@ -66,7 +16,7 @@
                 .noUi-handle {
                     top: -6px;
                     left: -1px;
-                    background-color: #DEBB67;
+                    background-color: $color-primary;
                     border: 2px solid #fff;
                     box-shadow: none;
                     width: 16px;
@@ -82,7 +32,7 @@
                 }
             }
             .noUi-connect {
-                background: linear-gradient(90deg, #DEBB67 26.09%, #F1D799 100%);
+                background-color: $color-primary;
                 border-radius: 50px;
                 box-shadow: none;
             }
@@ -100,22 +50,16 @@
         }
     }
 }
-.review-listing {
-    gap: 3px;
-    li {
-        color: #8A8A8A;
-        font-size: 14px;
-        font-family: $font-title;
-        a {
-            .icon-star {
-                color: #FFB400;
-                &.color-transparent {
-                    color: #CFD4DB;
-                }
-            }
+.sidebar-price {
+    .form-control {
+        height: 40px;
+        &:focus {
+            outline: 0;
+            box-shadow: none;
         }
     }
 }
+
 .sidebar-select {
     .select2-selection__arrow {
         height: 20px;
@@ -123,8 +67,8 @@
         &::after {
             border-bottom: 2px solid #969696;
             border-right: 2px solid #969696;
-            right: 12px;
-            top: 35px;
+            right: 18px;
+            top: 45px;
         }
         b {
             display: none;
@@ -135,131 +79,21 @@
     .select2-selection__rendered {
         font-family: $font-title;
         font-size: 14px;
-        background-color: #F6F6F6;
+        background-color: $color-white;
         color: #999999;
         border: 1px solid #E0E3E7;
         border-radius: $border-radius-xs;
-        height: 40px;
+        height: 43px;
         width: 100%;
         display: inline-block;
         line-height: 40px;
         padding: 0 15px;
     }
-}
-
-.rt-sidebar-2 {
-    background-color: $color-white;
-    border: 1px solid #E3E3E3;
-    border-radius: 10px;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.sidebar-subtitle {
-    font-family: $font-title;
-    font-size: 20px;
-    font-weight: $font-medium;
-    margin-bottom: 25px;
-}
-.rt-sidebar-appoinment {
-    .rt-contact-form {
-        .rt-form-control {
-            height: 46px;
-        }
-        .submit-btn {
-            background-color: $color-secondary;
-            border: 0;
-            height: 46px;
-            width: 100%;
-            color: $color-white;
-            padding: 0 30px;
-            border-radius: $border-radius-sm;
-            font-family: $font-title;
-            transition: all .3s ease-in-out;
-            &:hover {
-                background-color: $color-black;
-            }
-            &:focus {
-                outline: 0;
-                box-shadow: none;
-            }
-        }
+    .select2-selection.select2-selection--single {
+        padding-left: 0;
     }
 }
 
-.rt-author-status {
-    gap: 10px;
-    .content {
-        flex: 1;
-        .name {
-            font-weight: $font-medium;
-            font-family: $font-title;
-            color: $color-primary;
-        }
-        .status {
-            font-family: $font-title;
-            font-size: 14px;
-            position: relative;
-            &::after {
-                content: "";
-                height: 6px;
-                width: 6px;
-                background-color: #00B91E;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: -10px;
-                border-radius: 100%;
-            }
-        }
-    }
-}
-.author-contact-list {
-    margin-bottom: 20px;
-    li {
-        margin-bottom: 10px;
-        &:last-child {
-            margin-bottom: 0;
-        }
-        a {
-            font-family: $font-title;
-            color: $color-body;
-            i {
-                margin-right: 5px;
-            }
-        }
-    }
-}
-.rt-follow-area {
-    .xs-title {
-        color: $color-body;
-        font-size: 16px;
-        font-weight: $font-normal;
-        margin-bottom: 12px;
-    }
-}
-.working-day-list {
-    li {
-        margin-bottom: 10px;
-        &:last-child {
-            margin-bottom: 0;
-        }
-        .day {
-            font-family: $font-title;
-            font-size: 15px;
-            font-weight: $font-medium;
-        }
-        .time {
-            font-family: $font-title;
-            font-size: 15px;
-            color: #838383;
-        }
-        .closed {
-            color: #ED0A0A;
-            font-family: $font-medium;
-        }
-    }
-}
 
 .form-control:disabled, .form-control[readonly] {
     background-color: transparent;

@@ -27,9 +27,6 @@
                 font-size: 20px;
                 font-weight: $font-medium;
                 font-family: $font-title;
-                &:hover {
-                    color: $color-secondary;
-                }
                 .accr-plus, 
                 .accr-minus {
                     display: flex;
@@ -41,7 +38,7 @@
                     right: 0;
                     top: 50%;
                     transition: all 0.5s ease-in-out;
-                    color: $color-secondary;
+                    color: #DEBB67;
                     font-size: 8px;
                     border-radius: 0;
                     transform: translateY(-50%);
@@ -70,6 +67,7 @@
                         display: flex;
                         &::before {
                             font-weight: $font-bold;
+                            color: $color-secondary;
                         }
                     }
                 }
