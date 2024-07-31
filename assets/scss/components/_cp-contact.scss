@@ -42,13 +42,6 @@
         }
     }
 }
-// .rt-contact-layout {
-//     @include media-only ("lg", min) {
-//         transform: translateY(-55px);
-//         margin-left: 30px;
-//         margin-right: 30px;
-//     }
-// }
 .rt-contact-box {
     background-color: $color-white;
     border: 1px solid #DBDBDB;
@@ -56,7 +49,7 @@
     padding: 30px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
     @include media-only ("xs", min) {
-        padding: 25px 40px 40px;
+        padding: 35px 40px 40px;
     }
     .title {
         font-size: 24px;
@@ -197,7 +190,7 @@
 
 .contact-list {
     display: flex;
-    gap: 23px;
+    gap: 18px;
     position: relative;
     @include media-only ("lg", min) {
         width: 33.33%;
@@ -236,21 +229,27 @@
     }
     .content {
         flex: 1;
+        position: relative;
+        z-index: 1;
         .label {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: $font-medium;
             color: $color-black;
         }
         .info {
             line-height: 26px;
+            font-size: 14px;
+            font-weight: $font-medium;
         }
         .contact {
             line-height: 26px;
             a {
                 transition: all .3s ease-in-out;
                 color: $color-body;
+                font-weight: $font-medium;
+                font-size: 14px;
                 &:hover {
-                    color: $color-secondary;
+                    color: $color-primary;
                 }
             }
         }
