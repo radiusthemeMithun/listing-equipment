@@ -22,14 +22,11 @@
 }
 
 .rt-social-box {
-    margin-top: 15px;
-    @include media-only ("480px", min) {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 30px;
-        margin-top: 0;
-    }
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    margin-top: 0;
     ul {
         li {
             margin-bottom: 8px;

@@ -15,7 +15,10 @@
 .rt-banner-box1 {
     border-radius: $border-radius-xl;
     background-color: $color-white;
-    padding: 47px 38px 50px 50px;
+    padding: 30px;
+    @include media-only ("sm", min) {
+        padding: 47px 38px 50px 50px;
+    }
     .text-box {
         .title {
             color: $color-secondary;
@@ -37,20 +40,30 @@
 }
 
 .rt-banner-post-wrap {
+    padding-bottom: 80px;
     @include media-only ("lg", min) {
        margin-top: -100px;
        position: relative;
        z-index: 2;
+       padding: 0;
     }
 }
 
 .rt-banner-post-wrap2 {
+    padding-bottom: 80px;
     @include media-only ("lg", min) {
         padding: 0 0 110px;
     }
 }
 
 .post-banner-layout {
+    border: 1px solid #F6EED2;
+    border-radius: $border-radius-lg;
+    background-color: #FFFAE9;
+    padding: 40px;
+    @include media-only ("md", min) {
+       padding: 0;
+    }
     @include media-only ("lg", min) {
         transform: translateY(100px);
     }
@@ -66,9 +79,7 @@
 }
 
 .post-banner-img {
-    border: 1px solid #F6EED2;
-    border-radius: $border-radius-lg;
-    background-color: #FFFAE9;
+    bottom: 0;
 }
 
 .post-banner-content {
@@ -100,6 +111,11 @@
             }
         }
     }
+}
+
+.post-banner-bg-img {
+   bottom: 0;
+    right: 0;
 }
 
 

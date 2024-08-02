@@ -1,7 +1,9 @@
 .banner-search-filter-wrap {
     z-index: 1;
+    padding: 80px 0 0 0;
     @include media-only ("lg", min) {
-        transform: translateY(-25px);
+        transform: translateY(-50px);
+        padding: 0;
     }
     &.style-2 {
         @include media-only ("lg", min) {
@@ -13,10 +15,10 @@
 .banner-search-filter {
     background-color: $color-primary;
     border-radius: 12px;
-    padding: 20px 20px 10px;
+    padding: 20px;
     width: 100%;
     @include media-only ("lg", min) {
-        margin-bottom: -25px;
+        margin-bottom: -50px;
     }
     .search-filter-form {
         gap: 20px;

@@ -188,6 +188,13 @@
     }
 }
 
+.contact-list-layout {
+    flex-wrap: wrap;
+    @include media-only ("lg", min) {
+        flex-wrap: nowrap;
+    }
+}
+
 .contact-list {
     display: flex;
     gap: 18px;
@@ -204,6 +211,10 @@
         position: absolute;
         top: 0;
         right: 0;
+        display: none;
+        @include media-only ("lg", min) {
+           display: block;
+        }
     }
     &:last-child {
         &::after {

@@ -1,10 +1,28 @@
 .rt-hero-wrap {
-    background-image: url(../../media/banner/banner-3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    z-index: 1;
+    height: 100%;
+    padding: 150px 0;
     width: 100%;
-    @include media-only ("lg", min) {
+
+    @include media-only ("md", min) {
         padding: 323px 0 227px;
+    }
+}
+
+.rt-hero-layout-img {
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: rtZoom 50s linear infinite;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -16,12 +34,17 @@
     }
     .title {
         color: $color-white;
-        font-size: 60px;
+        font-size: 40px;
         font-weight: $font-bold;
         text-transform: capitalize;
-        line-height: 70px;
+        line-height: 50px;
+        @include media-only ("sm", min) {
+            font-size: 60px;
+            line-height: 70px;
+        }
     }
 }
+
 
 
 //......hero-elements......//
@@ -37,6 +60,10 @@
     justify-content: center;
     transform: translateY(-50%);
     transition: all .3s ease-in-out;
+    visibility: hidden;
+    @include media-only ("lg", min) {
+        visibility: visible;
+    }
     &:hover {
         background-color: $color-primary;
         border-color: $color-primary;

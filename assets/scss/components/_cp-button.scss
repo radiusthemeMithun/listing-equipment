@@ -8,43 +8,47 @@
 		text-transform: capitalize;
 		text-align: center;
 		display: inline-block;
-		transition: all .4s ease-in-out;
         border-radius: $border-radius-sm;
 		color: $color-secondary;
 		z-index: 1;
-		background-color: $color-primary;
 		font-family: $font-title;
 		position: relative;
-		&::before {
+		overflow: hidden;
+		transition: all .4s;
+		&::after, &::before {
+			content: '';
 			position: absolute;
-			content: "";
-			left: 100%;
-			width: 0%;
-			height: 100%;
-			background-color: $color-secondary;
-			border-radius: $border-radius-sm;
-			opacity: 0;
-			visibility: hidden;
-			transition: all 0.8s ease;
-			z-index: -1;
+			left: 0;
 			top: 0;
+			right: 0;
+			bottom: 0;
+			height: 100%;
+			background-color: $color-secondary; 
+			z-index: -1;
+			transform: translate3D(0,-100%,0);
+			transition: all .4s;
+			border-radius: $border-radius-sm;
+		}
+		&::before {
+			background-color: $color-primary;
+			z-index: -2;
+			transform: translate3D(0,0,0);
+		}
+		&::after {
+			transform: translate3D(-100%,100%,0);
 		}
 		i {
 			margin-left: 5px;
 			&::before {
 				color: $color-secondary;
-				transition: all .8s ease-in-out;
-				font-weight: $font-medium;
+				transition: all .4s;
 			}
 		}
 		&:hover {
 			color: $color-white;
-			&::before {
-				left: 0;
-				width: 100%;
-				opacity: 1;
-				visibility: visible;
-				transition: width 0.4s ease;
+			&::after {
+				transform: translate3D(0,0,0);
+  				transition: all .4s;
 			}
 			i {
 				&::before {
@@ -65,18 +69,17 @@
 			}
 		}
 		&.style-2 {
-			background-color: $color-gray;
             color: $color-black;
+			&::before {
+				background-color: $color-gray;
+			}
 			&:hover {
-				color: $color-black;
+				color: $color-white;
 				i {
 					&::before {
-						color: $color-black;
+						color: $color-white;
 					}
 				}
-			}
-			&::before {
-				background-color: $color-primary;
 			}
 			i {
 				&::before {
@@ -86,10 +89,12 @@
 			}
 		}
 		&.style-3 {
-			background-color: #303030;
             color: $color-white;
-			&::before {
+			&::before, &::after {
 				background-color: $color-secondary;
+			}
+			&::before {
+				background-color: #303030;
 			}
 			&:hover {
 				color: $color-white;
@@ -108,6 +113,7 @@
 		}
 	}
 }
+
 
 .favourite-button {
 	.favourite-btn {

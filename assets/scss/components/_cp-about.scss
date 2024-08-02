@@ -30,6 +30,7 @@
             bottom: -30px;
             left: -60px;
             z-index: -1;
+            animation: rtDown 2s linear infinite;
             .dots {
                 border-radius: 0;
             }

@@ -2,7 +2,7 @@
     padding: 100px 0;
     z-index: 1;
     @include media-only ("md", min) {
-        padding: 172px 0 90px 0;
+        padding: 172px 0 115px 0;
     }
     background-color: $color-secondary-100;
     z-index: 1;
@@ -19,8 +19,16 @@
         background-position: bottom;
         z-index: -1;
         background-size: contain;
+        display: none;
+        @include media-only ("1441px", min) {
+            display: block;
+        }
     }
     &.style-2 {
+        padding: 80px 0;
+        @include media-only ("md", min) {
+            padding: 100px 0;
+        }
         @include media-only ("lg", min) {
             padding-top: 183px;
             padding-bottom: 120px;
@@ -44,6 +52,16 @@
 }
 
 .rt-categories-box {
+    &:hover {
+        .item-icon {
+            &::before {
+                transform: scale(1);
+            }
+            img {
+                animation: bounce 1.5s;
+            }
+        }
+    }
     .item-icon {
         height: 130px;
         width: 130px;
@@ -55,6 +73,20 @@
         border: 1px solid #E6E4DC;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
         margin-bottom: 16px;
+        position: relative;
+        &::before {
+            position: absolute;
+            left: 0;
+            z-index: 9;
+            height: 130px;
+            width: 130px;
+            border: 1px solid $color-primary;
+            top: 0;
+            transform: scale(0);
+            transition: .4s;
+            content: "";
+            border-radius: 100%;
+        }
     }
     .content {
         .sm-title {

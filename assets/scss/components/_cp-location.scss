@@ -18,7 +18,7 @@
         .item-img {
             .location_img_box {
                 img {
-                    transform: translateY(10px) scale(1.1);
+                    transform: scale(1.1);
                 }
             }
         }
@@ -47,7 +47,8 @@
             img {
                 border-radius: $border-radius-lg;
                 width: 100%;
-                transition: all .3s ease-out 0s;
+                transition: all .4s ease-out;
+                transform-origin: bottom;
             }
         }
     }

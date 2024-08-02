@@ -1,6 +1,6 @@
 .rt-error-wrap {
     @include media-only ("lg", min) {
-        padding: 290px 0;
+        padding: 140px 0 190px;
     }
 }
 
@@ -8,35 +8,22 @@
     .text-box {
         .title {
             font-size: 40px;
-            color: $color-black;
+            color: $color-secondary;
             font-weight: $font-bold;
             margin-bottom: 10px;
             @include media-only ("sm", min) {
                 font-size: 60px;
-                margin-bottom: 25px;
+                line-height: 65px;
             }
         }
         p {
-            color: $color-border;
+            color: $color-font;
             font-size: 20px;
             text-transform: capitalize;
             margin-bottom: 20px;
             @include media-only ("sm", min) {
                 font-size: 24px;
-                margin-bottom: 25px;
-            }
-        }
-        .lawyer-button {
-            .lawyer-btn {
-                background-color: $color-primary;
-                &::before {
-                    background-color: $color-body;
-                }
-                i {
-                    &::before {
-                        color: $color-white;   
-                    }
-                }
+                margin-bottom: 45px;
             }
         }
     }

@@ -10,7 +10,7 @@
         .item-img {
             a {
                 img {
-                    transform: translateY(10px) scale(1.1);
+                    transform: scale(1.1); 
                 }
             }
         }
@@ -23,9 +23,9 @@
             }
             img {
                 border-radius: 15px 15px 0 0;
-                transition: all .3s ease-out 0s;
+                transition: all .4s ease-out;
+                transform-origin: bottom;
                 width: 100%;
-                
             }
         }
     }
@@ -115,7 +115,10 @@
     }
     .entry-meta-list {
         margin-bottom: 15px;
-        gap: 30px;
+        gap: 25px;
+        @include media-only ("sm", min) {
+            gap: 30px;
+        }
         li {
             position: relative;
             &:last-child {

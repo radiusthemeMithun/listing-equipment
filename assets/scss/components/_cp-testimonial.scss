@@ -1,8 +1,5 @@
 
 .rt-testimonial-wrap {
-    @include media-only ("lg", min) {
-        padding-bottom: 180px;
-    }
     .section-heading {
         @include media-only ("lg", min) {
             width: 662px;
@@ -42,10 +39,14 @@
             font-size: 16px;
         }
         .title {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: $font-bold;
-            line-height: 45px;
+            line-height: 35px;
             margin-bottom: 35px;
+            @include media-only ("sm", min) {
+                font-size: 40px;
+                line-height: 45px;
+            }
         }
         .item-quote {
             font-size: 18px;
@@ -140,11 +141,14 @@
     .rt-image-box {
         z-index: 1;
        .item-element {
-            left: -40px;
+            left: 0;
             bottom: 60px;
             display: none;
             @include media-only ("sm", min) {
                 display: block;
+            }
+            @include media-only ("md", min) {
+                left: -40px;
             }
             .element {
                 border: 1px solid #BCBCBC;

@@ -1,6 +1,8 @@
 .rt-newsletter-wrap {
     background-color: $color-primary;
-    padding: 100px 0;
+    @include media-only ("lg", min) {
+        padding: 100px 0;
+    }
 }
 
 .newsletter-box {

@@ -17,10 +17,12 @@
     }
     &.style-2 {
         background-color: $color-white;
-        border-radius: 1000px;
-        margin: 50px 70px 0;
+        @include media-only ("lg", min) {
+            border-radius: 1000px;
+            margin: 50px 70px 0;
+        }
         .navbar-wrap {
-            padding: 10px 15px 10px 10px;
+            padding: 10px 5px;
             .rt-main-menu {
                 .menu {
                     .menu-item {
@@ -91,20 +93,23 @@
         justify-content: end;
         .equipment-button {
             margin-left: 20px;
+            line-height: 1;
             .equipment-btn {
                 padding: 12px 24px;
-                background-color: #2D2D2D;
                 transition: all .4s;
                 color: $color-white;
                 font-weight: $font-medium;
+                &::before, &::after {
+                    background-color: $color-primary;
+                }
                 &::before {
-                    background-color: $color-white;
+                    background-color: #2D2D2D;
                 }
                 &:hover {
-                    color: $color-primary;
+                    color: $color-secondary;
                     svg {
                         transform: rotate(180deg);
-                        color: $color-primary; 
+                        color: $color-secondary; 
                     }
                 }
                 svg {
@@ -116,9 +121,12 @@
                     background-color: $color-primary;
                     color: $color-secondary;
                     border-radius: 100px;
-                    &::before {
+                    &::before, &::after {
                         background-color: #fad460;
                         border-radius: 100px;
+                    }
+                    &::before {
+                        background-color: $color-primary;
                     }
                     svg {
                         color: $color-secondary;
@@ -408,7 +416,7 @@
         top: auto;
         left: 0%;
         bottom: 0%;
-        background-color: $color-secondary;
+        background-color: $color-primary;
         z-index: -1;
         opacity: 0;
         visibility: hidden;
@@ -426,11 +434,11 @@
 }
 
 .offscreen-navigation ul li.menu-item-has-children > a:after {
-    color: $color-body;
-    content: "";
+    color: $color-black;
+    content: "\e800";
     display: inline-block;
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
+    font-family: "rt-equipment";
+    font-weight: 500;
     right: 20px;
     position: absolute;
     top: 50%;
@@ -441,11 +449,11 @@
     transition: 500ms;
 }
 .offscreen-navigation ul li.menu-item-has-children > a:before {
-    color: $color-body;
-    content: "";
+    color: $color-black;
+    content: "\e81b";
     display: inline-block;
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
+    font-family: "rt-equipment";
+    font-weight: 500;
     right: 20px;
     position: absolute;
     font-size: 16px;

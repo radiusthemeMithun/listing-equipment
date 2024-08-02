@@ -153,25 +153,25 @@
       slidesPerView: 6,
       speed: 1000,
       loop: true,
-      // autoplay: {
-      //     delay: 5000,
-      //     disableOnInteraction: false,
-      // },
+      autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+      },
       breakpoints: {
         0: {
-          slidesPerView: 1,
+          slidesPerView: 2,
         },
         480: {
-          slidesPerView: 2,
-        },
-        576: {
-          slidesPerView: 2,
-        },
-        768: {
           slidesPerView: 3,
         },
-        992: {
+        576: {
+          slidesPerView: 3,
+        },
+        768: {
           slidesPerView: 4,
+        },
+        992: {
+          slidesPerView: 5,
         },
         1200: {
           slidesPerView: 6,
@@ -230,10 +230,10 @@
           loop: true,
           spaceBetween: 24,
           slideToClickedSlide: true,
-          // autoplay: {
-          //   delay: 5000,
-          //   disableOnInteraction: false,
-          // },
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
           speed: 800,
           breakpoints: {
             0: {
@@ -265,6 +265,10 @@
       slidesPerView: 4,
       speed: 1000,
       loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
       breakpoints: {
         0: {
           slidesPerView: 1,
